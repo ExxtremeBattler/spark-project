@@ -16,4 +16,4 @@ function MainButton() {
         );
 }
 
-export default App;
+export default MainButton;

@@ -1,4 +1,6 @@
 import React from 'react';
+import MainButton from './components/button/button';
+
 
 function App() {
   return (

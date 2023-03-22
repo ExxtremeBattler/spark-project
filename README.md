@@ -1,6 +1,6 @@
-# The-Sparkles-Project [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/9b6d36b7-f328-4358-9718-ce18441e563f/deploy-status)](https://app.netlify.com/sites/monumental-marshmallow-1e41da/deploys)
+# The-Sparkles-Project [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/eb7934dd-c40f-4223-b15b-f61833e728dd/deploy-status)](https://app.netlify.com/sites/soft-longma-6bf6bc/deploys)
 
-Netlify link : https://main--monumental-marshmallow-1e41da.netlify.app/
+Netlify link : https://soft-longma-6bf6bc.netlify.app/
 
 
 

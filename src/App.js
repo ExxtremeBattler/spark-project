@@ -1,13 +1,11 @@
 import React from 'react';
-
-import MainGallery from './components/mainGallery/mainGallery';
-import MainButton from './components/button/button';
+import Landing from './pages/Landing/Landing';
 
 
 function App() {
   return (
     <div className="App">
-
+      <Landing />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import CodingPromptsDifficulty from './components/codingPromptsDifficulty/coding
 function App() {
   return (
     <div className="App">
-      {/* <CodingPromptsDifficulty /> */}
+        <MainButton text='button' />
     </div>
   );
 }

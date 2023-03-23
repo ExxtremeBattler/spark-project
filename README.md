@@ -1,4 +1,4 @@
-# The-Sparkles-Project [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/eb7934dd-c40f-4223-b15b-f61833e728dd/deploy-status)](https://app.netlify.com/sites/soft-longma-6bf6bc/deploys)
+# Spark-Project [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) [![Netlify Status](https://api.netlify.com/api/v1/badges/eb7934dd-c40f-4223-b15b-f61833e728dd/deploy-status)](https://app.netlify.com/sites/soft-longma-6bf6bc/deploys)
 
 Netlify link : https://soft-longma-6bf6bc.netlify.app/
 

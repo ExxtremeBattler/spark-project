@@ -1,11 +1,13 @@
 import React from 'react';
-import MainButton from './components/button/button';
+import MainGallery from './components/mainGallery/mainGallery';
 
 
 function App() {
   return (
     <div className="App">
-      <MainButton text='button' />
+
+      <MainGallery/>
+
     </div>
   );
 }

@@ -17,7 +17,7 @@ function MainButton(props) {
             
             }}>
 
-        <img src={props.src}></img>
+        <img src={props.src} alt='image passed from props'></img>
 
         {props.text}
         

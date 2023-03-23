@@ -1,13 +1,13 @@
 import React from 'react';
+
+import MainGallery from './components/mainGallery/mainGallery';
 import MainButton from './components/button/button';
-import Header from './components/art-page/Header/Header';
 
 
 function App() {
   return (
     <div className="App">
-      {/* <MainButton text='button' /> */}
-      <Header />
+
     </div>
   );
 }

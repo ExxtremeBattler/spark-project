@@ -9,7 +9,7 @@ function MainButton() {
         <Button 
         variant='contained'
         onClick={() => console.log('click')}
-        >first mui button </Button>
+        >first mui buttons </Button>
 
 
         </div>

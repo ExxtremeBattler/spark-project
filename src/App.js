@@ -1,6 +1,7 @@
 import React from 'react';
+
+import MainGallery from './components/mainGallery/mainGallery';
 import MainButton from './components/button/button';
-import CodingPromptsDifficulty from './components/codingPromptsDifficulty/codingPromptsDifficulty';
 
 
 function App() {

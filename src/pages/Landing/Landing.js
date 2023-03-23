@@ -1,5 +1,12 @@
+import React from 'react';
+import MainGallery from '../../components/mainGallery/mainGallery';
+
+
 function Landing() {
-    return (  );
+    return ( 
+
+        <MainGallery/>
+     );
 }
 
 export default Landing;

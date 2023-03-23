@@ -1,11 +1,11 @@
 import React from 'react';
-import MainButton from './components/button/button';
+import MainButton from './components/button/mainbutton';
 
 
 function App() {
   return (
     <div className="App">
-      <MainButton />
+      <MainButton text="button" />
     </div>
   );
 }

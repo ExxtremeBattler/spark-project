@@ -1,7 +1,7 @@
 .BeginnerButton{
     position: relative;
-    top: 208px;
-    left: 200px;
+    bottom: 150px;
+    left: 120px;
 }
 
 .IntermediateButton{
@@ -20,8 +20,14 @@
 .dot {
     height: 250px;
     width: 250px;
-    background-color:red;
+    background-color:gray;
     border-radius: 50%;
     display: inline-block;
+
+    padding:80px;
+
+    position:relative;
+    top: 80px;
+
     
   }

@@ -40,6 +40,10 @@ function CodingPromptsDifficulty() {
 
             </Grid>
 
+            <div className="GoButton"> 
+            <Button variant = "contained" size = "large"  > LET'S CODE!! </Button>
+            </div>
+
         </div>
     )
 }

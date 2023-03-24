@@ -7,7 +7,7 @@ function CodingPromptsChallengeBeginner() {
             
             <div className="square"> 
 
-            <h2 className="challengeHeader"> challnge header </h2>
+            <h2 className="challengeHeader"> Beginner </h2>
             <p className="challengeDesc"> whassup </p>
 
             </div>

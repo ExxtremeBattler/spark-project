@@ -1,9 +1,23 @@
-import React from "react";
+import { Typography } from "@mui/material";
+import React, { startTransition } from "react";
+import './footer.css' 
 
 function Footer (){
 
     return (
-        <div>Footer</div>
+        <div className="footer">
+
+            <Typography>
+                Made with Love 
+            </Typography>
+
+            <Typography>
+            
+            ExxtremeBattler & jh871 & NCStorey 
+            
+            </Typography>
+            
+            </div>
     )
 }
 

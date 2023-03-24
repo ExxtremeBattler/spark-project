@@ -18,7 +18,6 @@ function PromptBody() {
                 <Grid className="gridspace right" item xs={4}>
                     <div className="timeDisplay"><h3 className="timelimit">X minutes</h3>
                     <h2 className="countdown">0:59</h2></div>
-
                     
                     {/* selected time,
                     Countdown clock*/}

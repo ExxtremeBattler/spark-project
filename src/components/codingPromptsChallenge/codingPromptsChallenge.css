@@ -1,0 +1,16 @@
+.square {
+    height: 600px;
+    width: 600px;
+    background-color: #555;    
+  }
+
+  .challengeHeader{
+    position: relative;
+    left: 32%;
+  }
+
+  .challengeDesc{
+    position: relative;
+    left: 40%;
+    top: 10%;
+  }

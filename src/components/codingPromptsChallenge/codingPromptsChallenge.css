@@ -1,7 +1,10 @@
 .square {
-    height: 600px;
-    width: 600px;
-    background-color: #555;    
+    border-radius: 25px;
+  border: 2px ridge #73AD21;
+  padding: 20px;
+  width: 520px;
+  height: 520px;  
+  background: url("../../utils/images/d1ames3-c81f290b-e053-4480-b793-0b5b12d704bf.jpg")
   }
 
   .challengeHeader{
@@ -13,4 +16,20 @@
     position: relative;
     left: 40%;
     top: 10%;
+  }
+
+  .square2{
+    height: 520px;
+    width: 520px;
+    padding: 20px;
+    border-radius: 25px;
+    border: 2px ridge #73AD21;
+    background-image: url("../../utils/images/d1ames3-c81f290b-e053-4480-b793-0b5b12d704bf.jpg");
+    background-position: center;
+
+    position: relative;
+    bottom: 565px;
+    left: 50%;
+
+    
   }

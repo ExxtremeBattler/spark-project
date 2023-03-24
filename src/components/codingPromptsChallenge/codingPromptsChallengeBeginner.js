@@ -5,11 +5,16 @@ function CodingPromptsChallengeBeginner() {
     return(
         <div className="CodingPromptsChallengeBeginner">
             
-            <div class="square"> 
+            <div className="square"> 
 
             <h2 className="challengeHeader"> challnge header </h2>
             <p className="challengeDesc"> whassup </p>
 
+            </div>
+
+            <div className= "square2"> 
+            <h2 className="challengeHeader"> Prev projects </h2>
+            <p className="challengeDesc"> **local stor here** </p>
             </div>
             
 

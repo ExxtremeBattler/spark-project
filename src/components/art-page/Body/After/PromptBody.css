@@ -3,11 +3,11 @@
     margin: 0 auto;
 }
 
-
 .gridcontainer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .gridspace {
@@ -16,10 +16,4 @@
     /* max-width: 400px; */
     min-height: 300px;
     margin: 10px;
-}
-
-.right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

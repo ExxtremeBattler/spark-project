@@ -8,9 +8,9 @@ import './PromptBody.css'
 
 function PromptBody() {
     const promptList = DrawPrompts;
-    console.log(promptList);
+    // console.log(promptList);
     const artPrompt = promptList[Math.floor(Math.random()*promptList.length)];
-    console.log(artPrompt);
+    // console.log(artPrompt);
     return ( 
         <div className="pagebody">
             <Grid className="gridcontainer" container spacing={1}>

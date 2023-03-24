@@ -3,16 +3,20 @@
 
 import React from "react";
 import Grid from "@mui/system/Unstable_Grid/Grid";
+import DrawPrompts from '../../../../prompts/drawing-prompts.json'
 import './PromptBody.css'
 
 function PromptBody() {
-    // grab random drawing-prompt from json and display below
+    const promptList = DrawPrompts;
+    console.log(promptList);
+    const artPrompt = promptList[Math.floor(Math.random()*promptList.length)];
+    console.log(artPrompt);
     return ( 
         <div className="pagebody">
             <Grid className="gridcontainer" container spacing={1}>
                 <Grid className="gridspace left" item xs={7}>
                     <div>
-                        {/* drawing prompt text */}
+                        <h2 className="prompt-text">{artPrompt}</h2>
                     </div>
                 </Grid>
                 <Grid className="gridspace right" item xs={4}>

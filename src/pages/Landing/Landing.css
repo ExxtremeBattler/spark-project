@@ -1,0 +1,10 @@
+.contentContainer{
+
+    position: relative;
+    min-height: 100vh;
+}
+
+.footerSpacer{
+
+    padding-bottom: 6rem
+}

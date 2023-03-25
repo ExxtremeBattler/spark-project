@@ -2,6 +2,7 @@
 
 Netlify link : https://soft-longma-6bf6bc.netlify.app/
 
+Project Presentation : https://www.canva.com/design/DAFd8M5nU3o/BkkSTJmZ9JxuYmMkVQGkfA/edit?utm_content=DAFd8M5nU3o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
 

@@ -9,13 +9,26 @@ import "./WritingOptionCard.css"
 
 
 function WritingOptionCard(props) {
+    let prompted = true; //placeholder to test change in rendering content
+    
+    if (prompted===false) {
     return ( 
-    <>
-        <Card className='prompt-option-card' sx={{ minWidth: 275 }}>
-            <button className='prompt-option-btn' size="medium">{props.text}</button>
-        </Card>
-    </> 
-    );
+        <>
+            <Card className='prompt-option-card' sx={{ minWidth: 275 }}>
+                <button className='prompt-option-btn' size="medium">{props.text}</button>
+            </Card>
+        </> 
+    )
+    } else {
+        return (
+            <>
+                <Card className='prompt-display-card' sx={{ minWidth: 275 }}>
+                    <h3 className='prompt-display-label' size="medium">{props.text}</h3>
+                    <h2 className="prompt-text">Prompt Words</h2>
+                </Card>
+            </>
+        )
+    }
 }
 
 //<CardActions>             <CardContent></CardContent>

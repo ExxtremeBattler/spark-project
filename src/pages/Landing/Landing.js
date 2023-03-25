@@ -5,13 +5,14 @@ import Header from '../../components/header/header';
 
 
 function Landing() {
+
     return ( 
         <>
         <Header />
         <MainGallery/>
         <Footer />
         </>
-     );
+    );
 }
 
 export default Landing;

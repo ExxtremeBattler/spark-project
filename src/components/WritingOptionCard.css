@@ -1,0 +1,20 @@
+/* Set max width of this card to whatever the Grid space is*/
+.prompt-option-card {
+    max-width: 30%;
+    min-height: 200px; /* Set to match gridspace */
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+
+.prompt-option-btn {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 30%;
+    min-width: 300px;
+    min-height: 80px;
+    text-align: center;
+    border: none;
+}

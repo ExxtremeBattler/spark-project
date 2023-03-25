@@ -1,28 +1,32 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
+import { animated, useSpring } from '@react-spring/web';
 
 
 function MainButton(props) {
+
+    const [springs, api] = useSpring(() => ({
+        from: { y: 0, rotate: 0 },
+      }))
+
+      const handleHover = () => {
+        api.start({
+            loop: { reverse: false },
+            from: { y: 0, rotate: 0 },
+            to: { y: 0, rotate: 360 },
+            config: { duration: 800 }
+        })
+      }
+    
+
     return (
-        <div className="App">
-
-        <Button 
-        variant='contained'
-        onClick={() => console.log('click')}
-        sx={{
-            borderRadius: '40%',
-            height:'130px',
-            width:'130px'
-            
-            }}>
-
-        <img src={props.src} alt='passed from props'></img>
-
-        {props.text}
         
-        </Button>
-        </div>
-        );
-}
+        <animated.button style={{...springs}} onMouseEnter={handleHover}>
+            <img src={props.src} alt=''/>
+            {props.text}
+        </animated.button>
+
+
+       
+)}
 
 export default MainButton;

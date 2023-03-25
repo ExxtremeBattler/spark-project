@@ -11,19 +11,19 @@ function MainGallery() {
         <Grid>
             <Grid item xs={12}>
                 
-                <div className="gridspace"><MainButton text='button' /></div>
+                <div className="gridspace"><MainButton text='' /></div>
             </Grid>
         </Grid>
 
         <Grid container spacing={2}>
             <Grid item xs={12} md={4}>
-                <div className="gridspace"><MainButton text='button' /></div>
+                <div className="gridspace"><MainButton text='Writing Prompts' /></div>
             </Grid>
             <Grid item xs={12} md={4}>
-                <div className="gridspace"><MainButton text='button' /></div>
+                <div className="gridspace"><MainButton text='Drawing prompts' /></div>
             </Grid>
             <Grid item xs={12} md={4}>
-                <div className="gridspace"><MainButton text='button' /></div>
+                <div className="gridspace"><MainButton text='Coding Prompts' /></div>
             </Grid>
         </Grid>
     </>

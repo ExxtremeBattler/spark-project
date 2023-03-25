@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-
+//nav bar link options
 const pages = ['Home', 'Writing Prompts', 'Drawing Prompts', 'Coding Prompts', 'Contact'];
 
 // App bar with responsive menu copied from MUI website and altered to spark app
@@ -29,13 +29,13 @@ function Header() {
 
     return (
     
-    
-    <AppBar position="static">
-        <Container maxWidth="xl">
+    // container
+    <AppBar position="static" >
+        <Container maxWidth="xl" sx={{bgcolor: 'text.primary' }}>
             <Toolbar disableGutters>
 
                 {/* little icon when navbar is fully extended */}
-                <LightbulbOutlinedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                <LightbulbOutlinedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1,  }} />
 
                 {/* box to hold hamburger menu */}
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

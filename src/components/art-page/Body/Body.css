@@ -23,3 +23,28 @@
     align-items: center;
     justify-content: center;
 }
+
+/* from promptBody page:
+
+.pagebody {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gridcontainer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gridspace {
+    border: 4px solid black;
+    background-color: aqua;
+    max-width: 400px;
+    min-height: 300px;
+    margin: 10px;
+}
+
+
+ */

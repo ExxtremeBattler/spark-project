@@ -2,10 +2,11 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import './mainGallery.css'
 import MainButton from '../button/button';
+import LogoButton from '../logobutton/logobutton';
 import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import CodeIcon from '@mui/icons-material/Code';
-import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
+
 
 
 function MainGallery() {
@@ -15,7 +16,9 @@ function MainGallery() {
         <Grid>
             <Grid item xs={12}>
                 
-                <div className="gridspace"><MainButton text='' icon=<LightbulbOutlinedIcon sx={{ fontSize: 150 }}/> /></div>
+                <div className="gridspace">
+                    <LogoButton />
+                </div>
             </Grid>
         </Grid>
 

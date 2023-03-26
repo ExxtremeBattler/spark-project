@@ -1,6 +1,5 @@
 .gridspace {
-    background-color: rgb(221, 32, 32);
-    border: 2px solid black;
+
     min-height: 200px;
     max-width: 400px;
     margin: 0 auto;
@@ -16,4 +15,14 @@
         margin-top: 50px;
         margin-bottom: 5px;
         }
+}
+
+#logobutton{
+    background: url(../../utils/images/Spark_black_clear.png);
+    background-size: cover;
+    height: 150px;
+    width: 200px;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+
 }

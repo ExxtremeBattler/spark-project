@@ -2,6 +2,9 @@
 
     position: relative;
     min-height: 100vh;
+    background: url(../../utils/images/alexander-grey-p203ekCK4Ac-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .footerSpacer{

@@ -49,26 +49,53 @@ function CodingPromptsDifficulty() {
 
 
             <Grid item xs={4}>
+
             <div className="BeginnerButton"> 
-            <Button variant = "contained" size = "large" color="success" onClick={() => setDifficulty("Beginner")}> Beginner </Button>
+
+            <Button variant = "contained" 
+            size = "large" 
+            color="success" 
+            onClick={() => setDifficulty("Beginner")}
+            style={{ fontFamily: 'bradley hand, cursive' }}
+            > Beginner 
+            </Button>
+
             </div>
+            
             </Grid>
 
             <Grid item xs={4}>
             <div className="IntermediateButton">
-            <Button variant = "contained" size = "large" onClick={() => setDifficulty("Intermediate")}> Intermediate</Button>
+            <Button variant = "contained" 
+            size = "large" 
+            onClick={() => setDifficulty("Intermediate")}
+            style={{ fontFamily: 'bradley hand, cursive' }}
+            > Intermediate
+            
+            </Button>
+            
             </div>
             </Grid>
 
             <Grid item xs={4}>
+
             <div className="HardButton">
-            <Button variant = "contained" size = "large" color = "error" onClick={() => setDifficulty("Hard")}> Hard </Button>
+
+            <Button 
+            variant = "contained" 
+            size = "large" 
+            color = "error" 
+            onClick={() => setDifficulty("Hard")}
+            style={{ fontFamily: 'bradley hand, cursive' }}> Hard 
+            </Button>
+
             </div>
-            </Grid>
 
             </Grid>
 
-            <Button variant = "outlined" size = "large" href={difficulty}> LET'S CODE! </Button>
+            </Grid>
+
+            <Button variant = "outlined" size = "large" href={difficulty} style={{ fontFamily: 'bradley hand, cursive' }}> LET'S CODE! </Button>
 
             <Routes> 
                 <Route path="Beginner" element= {renderBeginner()}></Route>

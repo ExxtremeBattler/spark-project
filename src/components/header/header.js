@@ -30,7 +30,7 @@ function Header() {
     return (
     
     // container
-    <AppBar position="static" >
+    <AppBar position="static" sx={{bgcolor: 'text.primary' }}>
         <Container maxWidth="xl" sx={{bgcolor: 'text.primary' }}>
             <Toolbar disableGutters>
 

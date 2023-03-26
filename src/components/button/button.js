@@ -23,7 +23,9 @@ function MainButton(props) {
     return (
         
         <animated.button style={{...springs}} onMouseEnter={handleHover} className='button'>
+          <div>
             {props.icon}
+          </div>
             {props.text}
         </animated.button>
 

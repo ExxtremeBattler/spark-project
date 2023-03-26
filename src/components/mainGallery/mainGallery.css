@@ -1,8 +1,19 @@
 .gridspace {
-    background-color: aqua;
+    background-color: rgb(221, 32, 32);
     border: 2px solid black;
     min-height: 200px;
     max-width: 400px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 900px){
+    .gridspace 
+        {
+        margin-top: 50px;
+        margin-bottom: 5px;
+        }
 }

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { animated, useSpring } from '@react-spring/web';
+import './button.css'
 
 
 function MainButton(props) {
@@ -20,13 +21,11 @@ function MainButton(props) {
 
     return (
         
-        <animated.button style={{...springs}} onMouseEnter={handleHover}>
-            <img src={props.src} alt=''/>
+        <animated.button style={{...springs}} onMouseEnter={handleHover} className='button'>
+            {props.icon}
             {props.text}
         </animated.button>
 
-
-       
 )}
 
 export default MainButton;

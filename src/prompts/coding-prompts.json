@@ -1,5 +1,13 @@
-[
-    "Code a 'guess the number' game!", "Learn C++", "Learn C#", "Learn C++", "Code a todo list!", "Learn SQL", "Learn GraphQL", "Learn Express.js",
-    "Code a sentence translator", "Code a rock-paper-scissors game", "Code a bingo game", "Create or update your portfolio", "Learn Python",
-    "Lean Rust", "Learn Go", "Train at codewars.com", "Train at hackerrank.com"
-]
+{
+    "hardChallenges" : ["Code only in C++ for 1 week", "Code only in C# for 1 week", "Code only in SQL for 1 week", "Don't code using an IDE for 1 week",
+    "Code a sentence translator only in JavaScript", "Code only in Python for the next week"],
+    
+    "intermedChallenges" : ["Create a 'guess the number' game!", "Code a todo list!", "Code a rock-paper-scissors game", "Create or update your portfolio"
+    , "Code a bingo game"],
+    
+    "beginnerChallenges" : [ "Spend an hour learning a Ruby", "Code 'Hello World' in 3 different languages", "Complete 1 kata at codewars.com",
+    "Complete 1 challenge at hackerrank.com", "Code a coin flip simulator"]
+
+
+}
+

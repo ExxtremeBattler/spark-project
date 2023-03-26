@@ -1,5 +1,5 @@
 *{
-    color: rgb(16, 121, 212);
+    color: aliceblue;
     font-family: bradley hand, cursive;
 
 }
@@ -10,20 +10,20 @@ body{
 
 .BeginnerButton{
     position: relative;
-    bottom: 150px;
-    left: 120px;
+    bottom: 130px;
+    left: 200px;
 }
 
 .IntermediateButton{
     position: relative;
-    bottom: 208px;
-    left: 505px;
+    bottom: 190px;
+    left: 462px;
 }
 
 .HardButton{
     position: relative;
-    bottom: 265px;
-    left: 950px;
+    bottom: 250px;
+    left: 725px;
 }
 
 .GoButton{
@@ -37,16 +37,17 @@ body{
 }
 
 .dot {
-    height: 250px;
-    width: 250px;
-    background-color:gray;
+    height: 100px;
+    width: 100px;
+    background: url("../../utils/images/paper.jpeg");
     border-radius: 50%;
     padding: 71px;
     margin: 10px;
 
 
     position:relative;
-    top: 80px;
+    top: 40px;
+    left: 200px;
 
     
   }

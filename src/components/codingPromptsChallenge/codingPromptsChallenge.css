@@ -5,8 +5,7 @@
   padding: 20px;
   width: 520px;
   height: 520px;  
-  /* background: url("../../utils/images/d1ames3-c81f290b-e053-4480-b793-0b5b12d704bf.jpg") */
-  background-color: aliceblue
+  background: url("../../utils/images/paper.jpeg");
   }
 
   .challengeHeader{
@@ -21,12 +20,12 @@
   }
 
   .square2{
-    height: 520px;
+    height: 230px;
     width: 520px;
     padding: 20px;
-    border-radius: 25px;
+    border-radius: 25px 15px;
     border: 2px ridge black;
-    background-image: url("../../utils/images/d1ames3-c81f290b-e053-4480-b793-0b5b12d704bf.jpg");
+    background: url("../../utils/images/paper.jpeg");
     background-position: center;
 
     position: relative;

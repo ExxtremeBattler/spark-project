@@ -24,7 +24,7 @@ function WritingOptionCard(props) {
             <>
                 <Card className='prompt-display-card' sx={{ minWidth: 275 }}>
                     <h3 className='prompt-display-label' size="medium">{props.text}</h3>
-                    <h2 className="prompt-text">Prompt Words</h2>
+                    <h2 className="prompt-text">{props.prompt}</h2>
                 </Card>
             </>
         )

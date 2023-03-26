@@ -31,7 +31,7 @@ function Header() {
     
     // container
     <AppBar position="static" sx={{bgcolor: 'text.primary' }}>
-        <Container maxWidth="xl" sx={{bgcolor: 'text.primary' }}>
+        <Container maxWidth="xl">
             <Toolbar disableGutters>
 
                 {/* little icon when navbar is fully extended */}

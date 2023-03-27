@@ -1,8 +1,10 @@
 .footer {
 
     background-color: black;
-    height: 4rem;
+    height: 5rem;
     margin-top: 1rem;
     color: aliceblue;
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

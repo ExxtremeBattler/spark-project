@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { animated, useSpring } from '@react-spring/web';
-import './button.css'
+import './logobutton.css'
 
 
 
-function MainButton(props) {
+function LogoButton(props) {
 
     const [springs, api] = useSpring(() => ({
         from: { y: 0, rotate: 0 },
@@ -23,12 +23,9 @@ function MainButton(props) {
     return (
         
         <animated.button style={{...springs}} onMouseEnter={handleHover} className='button'>
-          <div>
-            {props.icon}
-          </div>
-            {props.text}
+          <div id='logobutton'></div>
         </animated.button>
 
 )}
 
-export default MainButton;
+export default LogoButton;

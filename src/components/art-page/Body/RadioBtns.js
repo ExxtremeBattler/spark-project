@@ -1,20 +1,15 @@
 // Radio buttons for Art promps page - placeholder for checkbaxes?
-import React, { useState } from 'react';
+import React from 'react';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
 // import FormLabel from '@mui/material/FormLabel';
 
-function RadioBtns() {
-    const [timeChoice, setTimeChoice] = useState('Random');
-
+function RadioBtns({ onSelection }) {
 
     function handleChange(event){
-        setTimeChoice(event.target.value);
-    }
-    function showData() {
-        console.log(timeChoice);
+        onSelection(event.target.value);
     }
 
 
@@ -26,35 +21,33 @@ function RadioBtns() {
             aria-labelledby="demo-radio-buttons-group-label"
             defaultValue="Random"
             name="radio-buttons-group"
-            onChange={handleChange}
         >
             <FormControlLabel 
-                value="1min" 
+                value="1" 
                 control={<Radio />} 
                 label="1 Minute" 
-                
+                onChange={handleChange}
             />
             <FormControlLabel 
-                value="5min" 
+                value="5" 
                 control={<Radio />} 
                 label="5 Minutes" 
-                // onchange={handleRadioClick}
+                onChange={handleChange}
             />
             <FormControlLabel 
-                value="10min" 
+                value="10" 
                 control={<Radio />} 
                 label="10 Minutes" 
-                // onchange={handleRadioClick}
+                onChange={handleChange}
             />
-            <FormControlLabel 
+            {/* <FormControlLabel 
                 value="Random" 
                 control={<Radio />} 
                 label="Random" 
                 // onchange={handleRadioClick}
-            />
+            /> */}
         </RadioGroup>
     </FormControl>
-    <button onClick={showData}>Generate Prompts</button>
     </> 
     );
 }

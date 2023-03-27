@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import Button from '@mui/material/Button';
 import "./codingPromptsDifficulty.css"
 import Grid from '@mui/material/Grid';
@@ -10,30 +10,25 @@ import CodingPromptsChallengeIntermediate from "../codingPromptsChallenge/coding
 import CodingPromptsChallengeHard from "../codingPromptsChallenge/codingPromptsChallengeHard"
 
 
-function renderBeginner() {
-    return(<CodingPromptsChallengeBeginner/>
-    )
-}
-
-function renderIntermediate() {
-    return(<CodingPromptsChallengeIntermediate/>
-    )
-}
-
-function renderHard() {
-    return(<CodingPromptsChallengeHard/>
-    )
-}
-
-function generateChallenge(){
-
-}
-
 
 function CodingPromptsDifficulty() {
     const [difficulty, setDifficulty] = useState("")
     let selectedDifficulty = difficulty
 
+    function renderBeginner() {
+        return(<CodingPromptsChallengeBeginner />
+        )
+    }
+    
+    function renderIntermediate() {
+        return(<CodingPromptsChallengeIntermediate />
+        )
+    }
+    
+    function renderHard() {
+        return(<CodingPromptsChallengeHard />
+        )
+    }
 
     return (
         <div className="CodingPromptsDifficulty">
@@ -54,6 +49,7 @@ function CodingPromptsDifficulty() {
             <Button variant = "contained" 
             size = "large" 
             color="success" 
+            href= "Beginner"
             onClick={() => setDifficulty("Beginner")}
             style={{ fontFamily: 'bradley hand, cursive', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "green", width: "230px", borderRadius: 8  }}
             > Beginner 
@@ -66,6 +62,7 @@ function CodingPromptsDifficulty() {
             <Grid item xs={4}>
             <div className="IntermediateButton">
             <Button variant = "contained" 
+            href= "Intermediate"
             size = "large" 
             onClick={() => setDifficulty("Intermediate")}
             style={{ fontFamily: 'bradley hand, cursive', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "blue", width: "230px",  borderRadius: 8}}
@@ -83,6 +80,7 @@ function CodingPromptsDifficulty() {
             <Button 
             variant = "contained" 
             size = "large" 
+            href= "Hard"
             onClick={() => setDifficulty("Hard")}
             style={{ fontFamily: 'bradley hand, cursive', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "red", width: "230px",  borderRadius: 8}}> Hard 
             </Button>
@@ -93,10 +91,10 @@ function CodingPromptsDifficulty() {
 
             </Grid>
 
-            <Button variant = "contained" 
+            {/* <Button variant = "contained" 
             size = "large" href={difficulty} 
             style={{ fontFamily: 'bradley hand, cursive', backgroundColor: "gray", borderRadius: 8}}
-            className = "GoButton"> LET'S CODE! </Button>
+            className = "GoButton"> LET'S CODE! </Button> */}
 
 
 
@@ -110,5 +108,7 @@ function CodingPromptsDifficulty() {
         </div>
     )
 }
+
+
 
 export default CodingPromptsDifficulty

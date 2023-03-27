@@ -1,30 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import "./codingPromptsChallenge.css"
 
 import challenges from "../../prompts/coding-prompts.json"
 
+let currentChallenge = ""
+
+
+var pastHardChallenges = JSON.parse(localStorage.getItem('pastHardChallenges'))
+
+pastHardChallenges ? console.log("Storage found") : pastHardChallenges = []
+
+
 function getChallengeHard() {
-    let challenge = challenges.hardChallenges[Math.floor(Math.random() * challenges.hardChallenges.length)];
+        
+    currentChallenge = challenges.hardChallenges[Math.floor(Math.random() * challenges.hardChallenges.length)];
+
+    pastHardChallenges.unshift(currentChallenge)
+
+    pastHardChallenges.length = 3
+    console.log(pastHardChallenges);
+
+    localStorage.setItem('pastHardChallenges', JSON.stringify(pastHardChallenges));
 
     return(
-        <p> {challenge} </p>
+        <p> {currentChallenge} </p>
     )
 }
 
+
+getChallengeHard()
+
+
 function CodingPromptsChallengeHard() {
+
+
+
     return(
         <div className="CodingPromptsChallengeHard">
             
             <div className="square"> 
 
             <h2 className="challengeHeader"> Hard </h2>
-            <p className="challengeDesc"> {getChallengeHard()} </p>
+            <p className="challengeDesc">{currentChallenge} </p>
 
             </div>
 
             <div className= "square2"> 
-            <h2 className="challengeHeader"> Prev projects </h2>
-            <p className="challengeDesc"> **local stor here** </p>
+            <h2 className="storageHeader"> Previous Projects </h2>
+            <ul className="storageList">
+
+            <li className="challenge1" >{pastHardChallenges[0]} </li>
+            <li className="challenge2" >{pastHardChallenges[1]} </li>
+            <li className="challenge3" >{pastHardChallenges[2]} </li>
+
+            </ul>
             </div>
             
 

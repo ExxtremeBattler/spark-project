@@ -1,11 +1,13 @@
 .lightbulb{
-    width:200px;
-    height: 200px;
-    background: url(../../utils/images/lightbulboutline.png)no-repeat;
+    width:100px;
+    height: 100px;
+    background: url(../../utils/images/lightbulboutline.png);
+    background-size: cover;
+    
 
 }
-
 .lightbulb:hover{
-    background: url(../../utils/images/lightbulbfull.png)no-repeat;
-    
+
+    background: url(../../utils/images/lightbulbfull.png);
+    background-size: cover;
 }

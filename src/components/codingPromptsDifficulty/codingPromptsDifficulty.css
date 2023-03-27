@@ -1,27 +1,57 @@
+*{
+    color: rgba(4, 1, 1, 0.944);
+    font-family: bradley hand, cursive;
+
+}
+
+.difficultyHeader{
+    color: aliceblue;
+}
+
+body{
+    background-color: rgba(4, 1, 1, 0.944);
+}
+
 .BeginnerButton{
     position: relative;
-    top: 208px;
+    bottom: 130px;
     left: 200px;
 }
 
 .IntermediateButton{
     position: relative;
-    top: 150px;
-    left: 600px;
+    bottom: 190px;
+    left: 462px;
 }
 
 .HardButton{
     position: relative;
-    top: 95px;
-    left: 1050px;
+    bottom: 250px;
+    left: 725px;
+}
 
+.GoButton{
+    position: relative;
+    left: 520px;
+    bottom: 60px;
+}
+
+.btn{
+    color: purple;
 }
 
 .dot {
-    height: 250px;
-    width: 250px;
-    background-color:red;
+    height: 100px;
+    width: 100px;
+    background: url("../../utils/images/paper.jpeg");
     border-radius: 50%;
-    display: inline-block;
+    padding: 71px;
+    margin: 10px;
+
+
+    position:relative;
+    top: 40px;
+    left: 200px;
+
     
   }

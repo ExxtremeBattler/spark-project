@@ -14,12 +14,19 @@ function Timer(props) {
         return <span>{minutes}:{zeroPad(seconds)}</span>
     }
 }
-
+    let time = null;
+    if (props.selection === "1") {
+        time = 60000;
+    } else if (props.selection === "5") {
+        time = 300000;
+    } else if (props.selection === "10") {
+        time = 600000;
+    };
     return ( 
         
         <div>
             <Countdown 
-                date={props.time}
+                date={Date.now() + time}
                 renderer={RenderTimer}
             />
         </div>

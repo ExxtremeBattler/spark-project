@@ -3,15 +3,21 @@ import "./codingPromptsChallenge.css"
 
 import challenges from "../../prompts/coding-prompts.json"
 
-function getChallengeBeginner() {
-    let challenge = challenges.beginnerChallenges[Math.floor(Math.random() * challenges.beginnerChallenges.length)];
 
-    return(
-        <p> {challenge} </p>
-    )
-}
 
-function CodingPromptsChallengeBeginner() {
+
+function CodingPromptsChallengeBeginner({storedProjects, setStoredProjects}) {
+
+    function getChallengeBeginner() {
+        let challenge = challenges.beginnerChallenges[Math.floor(Math.random() * challenges.beginnerChallenges.length)];
+
+        storedProjects.unshift(challenge)
+
+        return(
+            <p> {challenge} </p>
+        )
+    }
+
     return(
         <div className="CodingPromptsChallengeBeginner">
             
@@ -23,8 +29,8 @@ function CodingPromptsChallengeBeginner() {
             </div>
 
             <div className= "square2"> 
-            <h2 className="challengeHeader"> Prev projects </h2>
-            <p className="challengeDesc"> **local stor here** </p>
+            <h2 className="storageHeader"> Previous Projects </h2>
+            <ul className="storageList"> {storedProjects} </ul>
             </div>
             
 

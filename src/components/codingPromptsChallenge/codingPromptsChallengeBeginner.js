@@ -15,6 +15,13 @@ function getChallengeBeginner() {
         
     currentChallenge = challenges.beginnerChallenges[Math.floor(Math.random() * challenges.beginnerChallenges.length)];
 
+    const index = pastEasyChallenges.indexOf(currentChallenge);
+    
+    if (index > -1) {
+        getChallengeBeginner()
+        return
+    }
+
     pastEasyChallenges.unshift(currentChallenge)
 
     pastEasyChallenges.length = 3

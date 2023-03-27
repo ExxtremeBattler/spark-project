@@ -15,6 +15,13 @@ function getChallengeHard() {
         
     currentChallenge = challenges.hardChallenges[Math.floor(Math.random() * challenges.hardChallenges.length)];
 
+    const index = pastHardChallenges.indexOf(currentChallenge);
+    
+    if (index > -1) {
+        getChallengeHard()
+        return
+    }
+
     pastHardChallenges.unshift(currentChallenge)
 
     pastHardChallenges.length = 3

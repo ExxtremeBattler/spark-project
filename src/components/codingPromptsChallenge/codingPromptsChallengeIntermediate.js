@@ -15,6 +15,13 @@ function getChallengeIntermediate() {
         
     currentChallenge = challenges.intermedChallenges[Math.floor(Math.random() * challenges.intermedChallenges.length)];
 
+    const index = pastIntermediateChallenges.indexOf(currentChallenge);
+    
+    if (index > -1) {
+        getChallengeIntermediate()
+        return
+    }
+
     pastIntermediateChallenges.unshift(currentChallenge)
 
     pastIntermediateChallenges.length = 3

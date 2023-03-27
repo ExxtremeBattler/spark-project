@@ -1,6 +1,16 @@
 import React from "react";
 import "./codingPromptsChallenge.css"
 
+import challenges from "../../prompts/coding-prompts.json"
+
+function getChallengeBeginner() {
+    let challenge = challenges.beginnerChallenges[Math.floor(Math.random() * challenges.beginnerChallenges.length)];
+
+    return(
+        <p> {challenge} </p>
+    )
+}
+
 function CodingPromptsChallengeBeginner() {
     return(
         <div className="CodingPromptsChallengeBeginner">
@@ -8,7 +18,7 @@ function CodingPromptsChallengeBeginner() {
             <div className="square"> 
 
             <h2 className="challengeHeader"> Beginner </h2>
-            <p className="challengeDesc"> whassup </p>
+            <p className="challengeDesc">{getChallengeBeginner()} </p>
 
             </div>
 

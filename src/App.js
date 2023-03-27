@@ -1,10 +1,11 @@
 import React from 'react';
 import { useState, useEffect } from "react";
+import Contact from './pages/Contact/contact';
 // import Landing from './pages/Landing/Landing';
 // import CodingPromptsDifficulty from "./components/codingPromptsDifficulty/codingPromptsDifficulty"
 // import CodingPromptsChallengeBeginner from "./components/codingPromptsChallenge/codingPromptsChallengeBeginner"
 // import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
-import Lightbulb from './components/lightbulb/lightbulb';
+
 
 
 function App() {
@@ -23,6 +24,7 @@ useEffect(() => {
   
 
   return (
+    <Contact />
     // <Router>
     // <div className="App">
     //   {/* <Landing /> */}

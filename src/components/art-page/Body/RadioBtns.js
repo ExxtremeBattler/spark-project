@@ -8,11 +8,15 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 
 function RadioBtns() {
     const [timeChoice, setTimeChoice] = useState('Random');
-    console.log(timeChoice);
+
 
     function handleChange(event){
         setTimeChoice(event.target.value);
     }
+    function showData() {
+        console.log(timeChoice);
+    }
+
 
 
     return ( 
@@ -28,25 +32,29 @@ function RadioBtns() {
                 value="1min" 
                 control={<Radio />} 
                 label="1 Minute" 
+                
             />
             <FormControlLabel 
                 value="5min" 
                 control={<Radio />} 
                 label="5 Minutes" 
+                // onchange={handleRadioClick}
             />
             <FormControlLabel 
                 value="10min" 
                 control={<Radio />} 
                 label="10 Minutes" 
+                // onchange={handleRadioClick}
             />
             <FormControlLabel 
                 value="Random" 
                 control={<Radio />} 
                 label="Random" 
+                // onchange={handleRadioClick}
             />
         </RadioGroup>
     </FormControl>
-    
+    <button onClick={showData}>Generate Prompts</button>
     </> 
     );
 }

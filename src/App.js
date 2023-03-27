@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-import Landing from './pages/Landing/Landing';
-import CodingPromptsDifficulty from "./components/codingPromptsDifficulty/codingPromptsDifficulty"
-import CodingPromptsChallengeBeginner from "./components/codingPromptsChallenge/codingPromptsChallengeBeginner"
-import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
-
+// import Landing from './pages/Landing/Landing';
+// import CodingPromptsDifficulty from "./components/codingPromptsDifficulty/codingPromptsDifficulty"
+// import CodingPromptsChallengeBeginner from "./components/codingPromptsChallenge/codingPromptsChallengeBeginner"
+// import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
+import Lightbulb from './components/lightbulb/lightbulb';
 
 
 function App() {
@@ -23,17 +23,17 @@ useEffect(() => {
   
 
   return (
-    <Router>
-    <div className="App">
-      {/* <Landing /> */}
-      <CodingPromptsDifficulty storedProjects = {storedProjects} setStoredProjects = {setStoredProjects}/>
-      <div>
-        <Routes>
+    // <Router>
+    // <div className="App">
+    //   {/* <Landing /> */}
+    //   <CodingPromptsDifficulty storedProjects = {storedProjects} setStoredProjects = {setStoredProjects}/>
+    //   <div>
+    //     <Routes>
           
-        </Routes>
-      </div>
-    </div>
-    </Router>
+    //     </Routes>
+    //   </div>
+    // </div>
+    // </Router>
   );
 }
 

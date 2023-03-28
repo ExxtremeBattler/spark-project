@@ -5,9 +5,12 @@ import React from "react";
 function Instructions() {
     return ( 
         <div className="instruct-div">
-            <p className="instructions">Please select yout time limit, and click 'start' to begin!
+            <p className="instructions">When the timer begins, two images will appear. 
+            <br />
+            Use these as prompts in your piece!
+            <br />
             <br /> 
-            When the timer begins, two images will appear. Use these as prompts in your piece!
+            Please select your time limit, and click 'start' to begin!
             </p>
         </div>
     );

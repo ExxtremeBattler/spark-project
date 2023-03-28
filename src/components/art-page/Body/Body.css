@@ -1,50 +1,100 @@
+/* instructions above grid */
+.instruct-div {
+    background-color: rgb(5, 5, 5);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+/* overall structure */
 .pagebody {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2%;
 }
 
-
+/* grid container has both grid suqares (grid spaces) */
 .gridcontainer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    /* margin: 10px; */
 }
 
 .gridspace {
-    border: 4px solid black;
-    background-color: aqua;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     /* max-width: 400px; */
     min-height: 350px;
     margin: 10px;
 }
 
-.right {
+/*container for placeholder*/
+.placeholder-div {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* from promptBody page:
 
-.pagebody {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.gridcontainer {
-    display: inline-flex;
+/* Container for selecting time limit */
+.rightBefore {
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+.startBtn {
+    padding: 15px;
+    margin: 5px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Delicious Handrawn';
+}
+.radioBtns {
+    color: white;
+} /* remainder of styling may need to come from styleprops on form-control-label in RadioBtns.js*/
 
+
+/* Timer container */
+.rightAfter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.timeLabel {
+    color:rgb(75, 75, 75);
+}
+.countdown {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Delicious Handrawn';
 }
 
-.gridspace {
-    border: 4px solid black;
-    background-color: aqua;
-    max-width: 400px;
-    min-height: 300px;
-    margin: 10px;
+/* container for images div */
+.leftAfter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* images containers */
+.images-div{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
+.api-image {
+    border: 4px solid white;
+    padding: 5px;
+    margin: 5px;
+    display: block;
+}
 
- */
+/* */

@@ -1,17 +1,12 @@
-import * as React from 'react';
-// import Box from '@mui/material/Box';
+import React, { useState } from 'react';
 import Card from '@mui/material/Card';
-// import CardActions from '@mui/material/CardActions';
-// import CardContent from '@mui/material/CardContent';
-// import Button from '@mui/material/Button';
-// import Typography from '@mui/material/Typography';
 import "./WritingOptionCard.css"
 
 
 function WritingOptionCard(props) {
     const [prompt, setPrompt] = useState(false);
     
-    const handlePrompt = (events) => {
+    const handlePrompt = () => {
         setPrompt(true);
     };
     
@@ -39,6 +34,4 @@ function WritingOptionCard(props) {
     }
 }
 
-//<CardActions>             <CardContent></CardContent>
-//</CardActions>
 export default WritingOptionCard;

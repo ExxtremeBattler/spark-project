@@ -1,0 +1,29 @@
+.gridspace {
+
+    background-color: blue;
+    min-height: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 900px){
+    .gridspace 
+        {
+        margin-top: 50px;
+        margin-bottom: 5px;
+        }
+}
+
+#logobutton{
+    background: url(../../utils/images/Spark_black_clear.png);
+    background-size: cover;
+    height: 150px;
+    width: 200px;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+
+}

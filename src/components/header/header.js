@@ -9,9 +9,14 @@ import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
+
 
 //nav bar link options
-const pages = ['Home', 'Writing Prompts', 'Drawing Prompts', 'Coding Prompts', 'Contact'];
+const pages = [
+  // 'Home', 'Writing Prompts', 'Drawing Prompts', 
+{text: 'Coding Prompts', href: 'Coding'},
+];
 
 // App bar with responsive menu copied from MUI website and altered to spark app
 function Header() {
@@ -72,10 +77,13 @@ function Header() {
                     }}
                     >
                     {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <Link href = "Coding" key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                </Link>
+                
               ))}
+
+              
                     </Menu>
                 </Box>
                 
@@ -111,6 +119,9 @@ function Header() {
         </Toolbar>
       </Container>
     </AppBar>
+
+    
+
   );
 }
 export default Header;

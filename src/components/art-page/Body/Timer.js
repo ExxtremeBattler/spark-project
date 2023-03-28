@@ -14,7 +14,7 @@ function Timer(props) {
         return <span>{minutes}:{zeroPad(seconds)}</span>
     }
 }
-    let time = null;
+    let time = 600000;
     if (props.selection === "1") {
         time = 60000;
     } else if (props.selection === "5") {

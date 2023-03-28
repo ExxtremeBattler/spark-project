@@ -12,14 +12,14 @@ function ContactGallery() {
         <>
     <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
-            <div className="gridspace">
+            <div className="contactgridspace">
                 <div id="battler" className="profilepic"></div>
                 <div className="githubdiv"> GitHub </div>
                 <a className="githublink" href="https://github.com/ExxtremeBattler">ExxtremeBattler</a>
             </div>
         </Grid>
         <Grid item xs={12} md={4}>
-            <div className="gridspace">
+            <div className="contactgridspace">
                 <div id='jh871' className="profilepic"></div>
                 <div className="name">Jenny Hull</div>
                 <div className="githubdiv"> GitHub </div>
@@ -27,7 +27,7 @@ function ContactGallery() {
             </div>
         </Grid>
         <Grid item xs={12} md={4} >
-            <div className="gridspace">
+            <div className="contactgridspace">
                 <div id='ncstorey' className="profilepic"></div>
                 <div className="name">Nathalie storey</div>
                 <div className="githubdiv"> GitHub </div>
@@ -39,7 +39,7 @@ function ContactGallery() {
     <Grid>
         <Grid item xs={12}>
         
-            <div className="gridspace">
+            <div className="contactgridspace">
                 <div className="profilepic" id='spark'>
                     <LightbulbOutlinedIcon sx={{fontSize: 150}}/>
                 </div>

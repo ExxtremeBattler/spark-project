@@ -10,6 +10,8 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
+
+
 //nav bar link options
 const pages = ['Home', 'Writing Prompts', 'Drawing Prompts', 'Coding Prompts', 'Contact'];
 
@@ -34,8 +36,7 @@ function Header() {
         <Container maxWidth="xl">
             <Toolbar disableGutters>
 
-                {/* little icon when navbar is fully extended */}
-                <LightbulbOutlinedIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1,  }} />
+
 
                 {/* box to hold hamburger menu */}
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -78,8 +79,8 @@ function Header() {
               ))}
                     </Menu>
                 </Box>
-                
-          <Typography
+            
+                <Typography
             variant="h5"
             noWrap
             component="a"
@@ -88,15 +89,19 @@ function Header() {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: 'Delicious Handrawn',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            SPARK
+            Spark
           </Typography>
+          
+
+          
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } } }>
             {pages.map((page) => (
               <Button

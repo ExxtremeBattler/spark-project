@@ -21,8 +21,8 @@ import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 //nav bar link options
 const pages = [
   {name: 'Home', link: "Home"},
-  {name: 'Home', link: "Home"},
-  {name: 'Home', link: "Home"},
+  {name: 'Test', link: "Writing"},
+  {name: 'Test2', link: "Coding"},
   {name: 'Home', link: "Home"},
   {name: 'Home', link: "Home"}
 ];

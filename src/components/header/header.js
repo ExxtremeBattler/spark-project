@@ -111,8 +111,8 @@ function Header() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } } }>
             {pages.map((pages.forEach(page =>
-             { if(element == "Writing Prompts"){
-              
+             { if(page == "Writing Prompts"){
+
               return(<Button
                 href = "Writing"
                 key={page}

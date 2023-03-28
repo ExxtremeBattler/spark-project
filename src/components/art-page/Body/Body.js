@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import Instructions from "./Instructions";
 import Grid from "@mui/system/Unstable_Grid/Grid";
 import Placeholder from "./Placeholder";
 import RadioBtns from "./RadioBtns";
@@ -22,7 +23,8 @@ function Body() {
     //conditional rendering of page display
     if (start === false){
         return ( 
-            <div div className="pagebody"> 
+            <div div className="pagebody">
+                <Instructions />
                 <Grid className="gridcontainer" container spacing={1}>
                     <Grid className="gridspace left" item xs={5.5}>
                         <Placeholder />

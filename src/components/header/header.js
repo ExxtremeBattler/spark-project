@@ -24,10 +24,6 @@ const pages = ['Home',
 'Drawing Prompts', 
 'Coding Prompts', 'Contact'];
 
-// functions for deciding where to link the navbar buttons
-
-
-
 // App bar with responsive menu copied from MUI website and altered to spark app
 function Header() {
 
@@ -41,48 +37,6 @@ function Header() {
     //close navbar event
     const handleCloseNavMenu = () => {
     setAnchorElNav(null);};
-
-    function getCorrectButton(pageDir){
-
-      if(pageDir == "Home"){
-      
-        return(
-          <Button href = "Home" key={pageDir} onClick={handleCloseNavMenu}
-          sx={{ my: 2, color: 'white', display: 'block' }} > {pageDir} </Button>
-        )
-      }
-      
-      else if (pageDir == "Writing Prompts"){
-        
-        return(
-          <Button href = "Writing" key={pageDir} onClick={handleCloseNavMenu}
-          sx={{ my: 2, color: 'white', display: 'block' }} > {pageDir} </Button>
-        )
-      }
-      
-      else if (pageDir == "Drawing Prompts"){
-        
-        return(
-          <Button href = "Drawing" key={pageDir} onClick={handleCloseNavMenu}
-          sx={{ my: 2, color: 'white', display: 'block' }} > {pageDir} </Button>
-        )
-      }
-      
-      else if (pageDir == "Coding Prompts"){
-        
-        return(
-          <Button href = "Coding" key={pageDir} onClick={handleCloseNavMenu}
-          sx={{ my: 2, color: 'white', display: 'block' }} > {pageDir} </Button>
-        )
-      }
-      
-      else{
-        return(
-          <Button href = "Contact" key={pageDir} onClick={handleCloseNavMenu}
-          sx={{ my: 2, color: 'white', display: 'block' }} > {pageDir} </Button>
-        )
-      }
-      }
 
     return (
     
@@ -156,9 +110,19 @@ function Header() {
             SPARK
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } } }>
-            {pages.map((page) => (
-              getCorrectButton({page})
-            ))}
+            {pages.map((pages.forEach(page =>
+             { if(element == "Writing Prompts"){
+              
+              return(<Button
+                href = "Writing"
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                {page}
+              </Button>)
+             }
+             })))}
           </Box>
 
         

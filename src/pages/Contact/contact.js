@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from '../../components/footer/footer';
 import Header from '../../components/header/header';
-import Lightbulb from "../../components/lightbulb/lightbulb";
 import ContactGallery from "../../components/contactgallery/contactgallery";
 import './contact.css';
 

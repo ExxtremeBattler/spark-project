@@ -20,9 +20,9 @@ import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 
 //nav bar link options
 const pages = [
-  {text: 'Home', linkTarget: "/"},
-  {text: 'Writing', linkTarget: "Writing"},
-  {text: 'Coding', linkTarget: "Coding"}
+  {text: "Home", linkTarget: "/"},
+  {text: "Writing", linkTarget: "Writing"},
+  {text: "Coding", linkTarget: "Coding"}
 ];
 
 // App bar with responsive menu copied from MUI website and altered to spark app
@@ -84,10 +84,10 @@ function Header() {
                     }}
                     >
                     {pages.map((page) => (
-                <Link to="Coding"> <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                 <MenuItem key={page.text} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.text}</Typography>
                 </MenuItem>
-                </Link>
+                
               ))}
                     </Menu>
                 </Box>
@@ -115,17 +115,16 @@ function Header() {
 
             {pages.map((page) => (
               
-
                <Button
+
                 href = {page.linkTarget}
                 key={page.text}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
               {page.text}
-              </Button>
-              
 
+              </Button>
       
 
 

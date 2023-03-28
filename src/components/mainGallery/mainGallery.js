@@ -7,11 +7,8 @@ import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import CodeIcon from '@mui/icons-material/Code';
 
-import Gallery from './components/writingPromptsGallery/Gallery';
-import CodingPromptsDifficulty from "./components/codingPromptsDifficulty/codingPromptsDifficulty"
-
-
-
+import Gallery from '../writingPromptsGallery/Gallery';
+import CodingPromptsDifficulty from "../codingPromptsDifficulty/codingPromptsDifficulty"
 
 
 

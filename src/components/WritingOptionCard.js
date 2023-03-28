@@ -9,13 +9,21 @@ import "./WritingOptionCard.css"
 
 
 function WritingOptionCard(props) {
-    let prompted = true; //placeholder to test change in rendering content
+    const [prompt, setPrompt] = useState(false);
     
-    if (prompted===false) {
+    const handlePrompt = (events) => {
+        setPrompt(true);
+    };
+    
+    if (prompt === false) {
     return ( 
         <>
             <Card className='prompt-option-card' sx={{ minWidth: 275 }}>
-                <button className='prompt-option-btn' size="medium">{props.text}</button>
+                <button 
+                    className='prompt-option-btn' 
+                    size="medium"
+                    onClick={handlePrompt}
+                >{props.text}</button>
             </Card>
         </> 
     )

@@ -1,4 +1,4 @@
-.gridspace {
+.maingridspace {
 
     min-height: 200px;
     max-width: 400px;
@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 900px){
-    .gridspace 
+    .maingridspace 
         {
         margin-top: 50px;
         margin-bottom: 5px;

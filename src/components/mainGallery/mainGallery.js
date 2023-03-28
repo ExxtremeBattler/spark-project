@@ -20,7 +20,7 @@ function MainGallery() {
         <Grid>
             <Grid item xs={12}>
                 
-                <div className="gridspace">
+                <div className="maingridspace" id='sparklogodiv'>
                     <LogoButton />
                 </div>
             </Grid>
@@ -28,13 +28,13 @@ function MainGallery() {
 
         <Grid container spacing={2}>
             <Grid item xs={12} md={4}>
-                <div className="gridspace"><MainButton href="Writing" text='Writing Prompts' icon=<HistoryEduIcon sx={{ fontSize: 80 }}/> /></div>
+                <div className="maingridspace"><MainButton href="Writing" text='Writing Prompts' icon=<HistoryEduIcon sx={{ fontSize: 80 }}/> /></div>
             </Grid>
             <Grid item xs={12} md={4}>
-                <div className="gridspace"><MainButton href= "Drawing" text='Drawing prompts' icon=<ColorLensIcon sx={{ fontSize: 80 }}/> /></div>
+                <div className="maingridspace"><MainButton href= "Drawing" text='Drawing prompts' icon=<ColorLensIcon sx={{ fontSize: 80 }}/> /></div>
             </Grid>
             <Grid item xs={12} md={4} >
-                <div className="gridspace"><MainButton href= "Coding" text='Coding Prompts' icon=<CodeIcon sx={{ fontSize: 80 }}/> /></div>
+                <div className="maingridspace"><MainButton href= "Coding" text='Coding Prompts' icon=<CodeIcon sx={{ fontSize: 80 }}/> /></div>
             </Grid>
         </Grid>
 

@@ -1,4 +1,4 @@
-.gridspace {
+.contactgridspace {
 
     background-color: black;
     min-height: 400px;
@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 900px){
-    .gridspace 
+    .contactgridspace 
         {
         margin-top: 50px;
         margin-bottom: 5px;

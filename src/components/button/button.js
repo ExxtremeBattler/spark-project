@@ -22,7 +22,7 @@ function MainButton(props) {
 
     return (
         
-        <animated.button style={{...springs}} onMouseEnter={handleHover} className='button'>
+        <animated.button style={{...springs}} onMouseEnter={handleHover} className='mainbutton'>
           <div>
             {props.icon}
           </div>

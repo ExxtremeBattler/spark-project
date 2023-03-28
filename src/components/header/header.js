@@ -116,15 +116,15 @@ function Header() {
             {pages.map((page) => (
               
 
-               <div> <Button
+               <Button
                 href = {page.linkTarget}
                 key={page.text}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page.text}
+              {page.text}
               </Button>
-              </div>
+              
 
       
 

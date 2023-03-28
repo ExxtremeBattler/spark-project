@@ -9,6 +9,7 @@ import CodeIcon from '@mui/icons-material/Code';
 
 import Gallery from '../writingPromptsGallery/Gallery';
 import CodingPromptsDifficulty from "../codingPromptsDifficulty/codingPromptsDifficulty"
+import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 
 
 

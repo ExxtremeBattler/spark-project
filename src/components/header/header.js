@@ -11,6 +11,9 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import muiLink from '@mui/material/Link';
 
+//page imports
+import Gallery from "../writingPromptsGallery/Gallery"
+
 
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 
@@ -118,6 +121,10 @@ function Header() {
               </Button>
             ))}
           </Box>
+
+          <Routes>
+            <Route path = "Writing" element = {<Gallery />} > </Route>
+          </Routes>
         </Toolbar>
       </Container>
     </AppBar>

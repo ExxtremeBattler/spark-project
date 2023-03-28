@@ -14,8 +14,7 @@ import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 
 //nav bar link options
 const pages = [
-  // 'Home', 'Writing Prompts', 'Drawing Prompts', 
-{text: 'Coding Prompts', href: 'Coding'},
+'Home', 'Writing Prompts', 'Drawing Prompts', "Coding Prompts", "Contact"
 ];
 
 // App bar with responsive menu copied from MUI website and altered to spark app

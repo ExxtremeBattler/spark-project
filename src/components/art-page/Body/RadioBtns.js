@@ -4,7 +4,6 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
 import FormControlLabel from '@mui/material/FormControlLabel';
-// import FormLabel from '@mui/material/FormLabel';
 
 function RadioBtns({ onSelection }) {
 
@@ -12,14 +11,12 @@ function RadioBtns({ onSelection }) {
         onSelection(event.target.value);
     }
 
-
-
     return ( 
     <>
     <FormControl>
         <RadioGroup
             aria-labelledby="demo-radio-buttons-group-label"
-            defaultValue="Random"
+            defaultValue="10"
             name="radio-buttons-group"
         >
             <FormControlLabel 
@@ -40,12 +37,6 @@ function RadioBtns({ onSelection }) {
                 label="10 Minutes" 
                 onChange={handleChange}
             />
-            {/* <FormControlLabel 
-                value="Random" 
-                control={<Radio />} 
-                label="Random" 
-                // onchange={handleRadioClick}
-            /> */}
         </RadioGroup>
     </FormControl>
     </> 

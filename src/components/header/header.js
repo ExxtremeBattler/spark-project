@@ -19,7 +19,8 @@ import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 
 
 //nav bar link options
-const pages = ['Home', 
+const pages = [
+  {name: 'Home', link: "Home"},
 'Writing Prompts', 
 'Drawing Prompts', 
 'Coding Prompts', 'Contact'];
@@ -110,19 +111,19 @@ function Header() {
             SPARK
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } } }>
-            {pages.map((pages.forEach(page =>
-             { if(page == "Writing Prompts"){
 
-              return(<Button
-                href = "Writing"
-                key={page}
+            {pages.map((page) => (
+              
+
+              <Button
+                href = {page.link}
+                key={page.name}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
-              </Button>)
-             }
-             })))}
+              </Button>
+            ))}
           </Box>
 
         

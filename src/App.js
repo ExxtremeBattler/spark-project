@@ -1,9 +1,15 @@
+//technologies
 import React from 'react';
-import { useState, useEffect } from "react";
+
+// landing page imports
 import Contact from './pages/Contact/contact';
 import Landing from './pages/Landing/Landing';
+
+// writing imports
+import Gallery from './components/writingPromptsGallery/Gallery';
+
+// coding imports
 import CodingPromptsDifficulty from "./components/codingPromptsDifficulty/codingPromptsDifficulty"
-import CodingPromptsChallengeBeginner from "./components/codingPromptsChallenge/codingPromptsChallengeBeginner"
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 
 
@@ -14,10 +20,14 @@ function App() {
   
     <Router>
     <div className="App">
-      <Landing /> 
       <div>
         <Routes>
-          
+        <Route path="/" element = {<Landing />} />
+        <Route path="Writing" element = {<Gallery />} />
+        {/* <Route path="Drawing" element = {< />} /> */}
+        <Route path="Coding" element = {<CodingPromptsDifficulty />} />
+
+
         </Routes>
       </div>
     </div>

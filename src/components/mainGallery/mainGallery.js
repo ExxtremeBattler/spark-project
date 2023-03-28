@@ -7,6 +7,11 @@ import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import CodeIcon from '@mui/icons-material/Code';
 
+import Gallery from './components/writingPromptsGallery/Gallery';
+import CodingPromptsDifficulty from "./components/codingPromptsDifficulty/codingPromptsDifficulty"
+
+
+
 
 
 
@@ -35,7 +40,11 @@ function MainGallery() {
             </Grid>
         </Grid>
 
-        
+        <Routes>
+        <Route path="Writing" element = {<Gallery/>} />
+        {/* <Route path= "Drawing" element = {<ProjectGallery />} /> */}
+        <Route path= "Coding" element = {<CodingPromptsDifficulty/>} />
+      </Routes>
     </>
     );
 }

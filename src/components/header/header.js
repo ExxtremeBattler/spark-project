@@ -9,11 +9,21 @@ import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import muiLink from '@mui/material/Link';
 
+//page imports
+import Gallery from "../writingPromptsGallery/Gallery"
+
+
+import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 
 
 //nav bar link options
-const pages = ['Home', 'Writing Prompts', 'Drawing Prompts', 'Coding Prompts', 'Contact'];
+const pages = [
+  {text: "Home", linkTarget: "/"},
+  {text: "Writing", linkTarget: "Writing"},
+  {text: "Coding", linkTarget: "Coding"}
+];
 
 // App bar with responsive menu copied from MUI website and altered to spark app
 function Header() {
@@ -73,9 +83,10 @@ function Header() {
                     }}
                     >
                     {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                 <MenuItem key={page.text} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.text}</Typography>
                 </MenuItem>
+                
               ))}
                     </Menu>
                 </Box>
@@ -99,20 +110,27 @@ function Header() {
             Spark
           </Typography>
           
-
-          
-
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } } }>
+
             {pages.map((page) => (
-              <Button
-                key={page}
+              
+               <Button
+
+                href = {page.linkTarget}
+                key={page.text}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+              {page.text}
+
               </Button>
+      
+
+
             ))}
           </Box>
+
+        
         </Toolbar>
       </Container>
     </AppBar>

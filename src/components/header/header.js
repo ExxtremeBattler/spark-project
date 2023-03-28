@@ -13,9 +13,10 @@ import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 
 
 //nav bar link options
-const pages = [
-'Home', 'Writing Prompts', 'Drawing Prompts', "Coding Prompts", "Contact"
-];
+const pages = ['Home', 
+'Writing Prompts', 
+'Drawing Prompts', 
+'Coding Prompts', 'Contact'];
 
 // App bar with responsive menu copied from MUI website and altered to spark app
 function Header() {
@@ -76,13 +77,10 @@ function Header() {
                     }}
                     >
                     {pages.map((page) => (
-                <Link href = "Coding" key={page} onClick={handleCloseNavMenu}>
+                <MenuItem component = {Link} to = "Coding"  key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
-                </Link>
-                
+                </MenuItem>
               ))}
-
-              
                     </Menu>
                 </Box>
                 
@@ -118,9 +116,6 @@ function Header() {
         </Toolbar>
       </Container>
     </AppBar>
-
-    
-
   );
 }
 export default Header;

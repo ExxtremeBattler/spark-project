@@ -1,6 +1,6 @@
 // PIXABAY API - images
 // Source: 
-// Key: https://pixabay.com/api/?key=34641504-ede8faf3281ff4dfa2566efc0
+
 // additional endpoints: &q={word} &safesearch=true
 
 import React, { useState, useEffect } from 'react';
@@ -15,7 +15,7 @@ function Pixabay() {
 
     useEffect(() => {
         const setting = (selection)
-        fetch('https://pixabay.com/api/?key=34641504-ede8faf3281ff4dfa2566efc0&safesearch=true&q='+setting)
+        fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABEY_API_KEY}&safesearch=true&q=`+setting)
         .then((res) => res.json())
         .then((data) => {
             console.log(data.hits[0].webformatURL);

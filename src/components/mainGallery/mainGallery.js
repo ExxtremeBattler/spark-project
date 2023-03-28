@@ -9,6 +9,7 @@ import CodeIcon from '@mui/icons-material/Code';
 
 
 
+
 function MainGallery() {
     return ( 
     <>
@@ -24,15 +25,17 @@ function MainGallery() {
 
         <Grid container spacing={2}>
             <Grid item xs={12} md={4}>
-                <div className="gridspace"><MainButton text='Writing Prompts' icon=<HistoryEduIcon sx={{ fontSize: 80 }}/> /></div>
+                <div className="gridspace"><MainButton href="Writing" text='Writing Prompts' icon=<HistoryEduIcon sx={{ fontSize: 80 }}/> /></div>
             </Grid>
             <Grid item xs={12} md={4}>
-                <div className="gridspace"><MainButton text='Drawing prompts' icon=<ColorLensIcon sx={{ fontSize: 80 }}/> /></div>
+                <div className="gridspace"><MainButton href= "Drawing" text='Drawing prompts' icon=<ColorLensIcon sx={{ fontSize: 80 }}/> /></div>
             </Grid>
             <Grid item xs={12} md={4} >
-                <div className="gridspace"><MainButton text='Coding Prompts' icon=<CodeIcon sx={{ fontSize: 80 }}/> /></div>
+                <div className="gridspace"><MainButton href= "Coding" text='Coding Prompts' icon=<CodeIcon sx={{ fontSize: 80 }}/> /></div>
             </Grid>
         </Grid>
+
+        
     </>
     );
 }

@@ -1,6 +1,9 @@
 //technologies
 import React from 'react';
 
+// navbar
+import Header from './components/header/header';
+
 // landing page imports
 import Contact from './pages/Contact/contact';
 import Landing from './pages/Landing/Landing';
@@ -20,6 +23,9 @@ function App() {
   
     <Router>
     <div className="App">
+      <Header /> 
+      {/* navbar will render across all pages */}
+      
       <div>
         <Routes>
         <Route path="/" element = {<Landing />} />

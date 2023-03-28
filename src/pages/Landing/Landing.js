@@ -12,6 +12,7 @@ function Landing() {
         <div className='contentContainer'>
             <div className='footerSpacer'>
                 <MainGallery/>
+                <Footer />
             </div>
         </div>
      );

@@ -8,7 +8,7 @@ function StartBtn({onClick}) {
   }
 
   return (
-    <button onClick={handleClick}>Click to start</button>
+    <button onClick={handleClick} className="startBtn">START</button>
   );
 };
 

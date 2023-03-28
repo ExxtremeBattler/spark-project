@@ -26,10 +26,10 @@ function Body() {
             <div div className="pagebody">
                 <Instructions />
                 <Grid className="gridcontainer" container spacing={1}>
-                    <Grid className="gridspace left" item xs={5.5}>
+                    <Grid className="gridspace leftBefore" item xs={5.5}>
                         <Placeholder />
                     </Grid>
-                    <Grid className="gridspace right" item xs={5.5}>
+                    <Grid className="gridspace rightBefore" item xs={5.5}>
                         <RadioBtns onSelection={setSelection}/>
                         <StartBtn onClick={setStart} />
                     </Grid>
@@ -40,12 +40,12 @@ function Body() {
         return ( 
             <div className="pagebody">
                 <Grid className="gridcontainer" container spacing={1}>
-                    <Grid className="gridspace left" item xs={7}>
-                        <div>
+                    <Grid className="gridspace leftAfter" item xs={7}>
+                        <div className="images-div">
                             <Pixabay />
                         </div>
                     </Grid>
-                    <Grid className="gridspace right" item xs={4}>
+                    <Grid className="gridspace rightAfter" item xs={4}>
                         <div className="timeDisplay">
                             <h2 className='timeLabel'>You have {selection} minute{"(s)"}</h2>
                             <h2 className="countdown">

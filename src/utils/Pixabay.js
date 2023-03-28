@@ -36,12 +36,14 @@ function Pixabay() {
                 <img 
                     src={pic} 
                     alt="subject"
-                    style={{maxWidth:300, maxHeight: 400}}
+                    style={{maxWidth:350, maxHeight: 350}}
+                    className='api-image'
                 />
                 <img 
                     src={picTwo} 
                     alt="setting"
-                    style={{maxWidth:300, maxHeight: 400}} 
+                    style={{maxWidth:350, maxHeight: 350}} 
+                    className='api-image'
                 />
             </>) 
         } else {

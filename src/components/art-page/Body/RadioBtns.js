@@ -18,22 +18,47 @@ function RadioBtns({ onSelection }) {
             aria-labelledby="demo-radio-buttons-group-label"
             defaultValue="10"
             name="radio-buttons-group"
+            className='radioBtns'
         >
             <FormControlLabel 
                 value="1" 
-                control={<Radio />} 
+                control={
+                <Radio 
+                    size="large"
+                    sx={{
+                        '&, &.Mui-checked': {
+                        color: 'magenta',
+                        },
+                    }}
+                />}
                 label="1 Minute" 
                 onChange={handleChange}
             />
             <FormControlLabel 
                 value="5" 
-                control={<Radio />} 
+                control={
+                <Radio 
+                    size="large"
+                    sx={{
+                        '&, &.Mui-checked': {
+                        color: 'magenta',
+                        },
+                    }}
+                />}
                 label="5 Minutes" 
                 onChange={handleChange}
             />
             <FormControlLabel 
                 value="10" 
-                control={<Radio />} 
+                control={
+                <Radio 
+                    size="large"
+                    sx={{
+                        '&, &.Mui-checked': {
+                        color: 'magenta',
+                        },
+                    }}
+                />} 
                 label="10 Minutes" 
                 onChange={handleChange}
             />

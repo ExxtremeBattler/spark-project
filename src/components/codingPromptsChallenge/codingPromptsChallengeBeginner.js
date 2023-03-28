@@ -6,7 +6,7 @@ import challenges from "../../prompts/coding-prompts.json"
 let currentChallenge = ""
 
 
-const pastEasyChallenges = JSON.parse(localStorage.getItem('pastEasyChallenges'))
+var pastEasyChallenges = JSON.parse(localStorage.getItem('pastEasyChallenges'))
 
 pastEasyChallenges ? console.log("Storage found") : pastEasyChallenges = []
 

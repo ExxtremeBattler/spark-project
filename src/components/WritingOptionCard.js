@@ -13,7 +13,7 @@ function WritingOptionCard(props) {
     if (prompt === false) {
     return ( 
         <>
-            <Card className='prompt-option-card' sx={{ minWidth: 275 }}>
+            <Card className='prompt-option-card' sx={{ minWidth: 275, maxHeight: 250}}>
                 <button 
                     className='prompt-option-btn' 
                     size="medium"
@@ -25,7 +25,7 @@ function WritingOptionCard(props) {
     } else {
         return (
             <>
-                <Card className='prompt-display-card' sx={{ minWidth: 275 }}>
+                <Card className='prompt-display-card' sx={{ minWidth: 275, maxHeight: 250 }}>
                     <h3 className='prompt-display-label' size="medium">{props.text}</h3>
                     <h2 className="prompt-text">{props.prompt}</h2>
                 </Card>

@@ -28,51 +28,51 @@ function Gallery() {
     return ( 
         <>
         <Instructions />
-        <Grid container spacing={2}>
-            <Grid item xs={4} md={4}>
-                <div className="gridspace">
+        <Grid className="gallery-gridcontainer" container spacing={1}>
+            <Grid item xs={12} md={4}>
+                <div className="gallery-gridspace">
                     <WritingOptionCard 
-                        text="Genre"
+                        text="GENRE"
                         prompt={genrePrompt}
                     />
                 </div>
             </Grid>
-            <Grid item xs={4} md={4}>
-                <div className="gridspace">
+            <Grid item xs={12} md={4}>
+                <div className="gallery-gridspace">
                     <WritingOptionCard 
-                    text="Location" 
+                    text="LOCATION" 
                     prompt={locationPrompt}
                     />
                 </div>
             </Grid>
-            <Grid item xs={4} md={4}>
-                <div className="gridspace">
+            <Grid item xs={12} md={4}>
+                <div className="gallery-gridspace">
                     <WritingOptionCard 
-                    text="Weather" 
+                    text="WEATHER" 
                     prompt={weatherPrompt} 
                     />
                 </div>
             </Grid>
-            <Grid item xs={4} md={4}>
-                <div className="gridspace">
+            <Grid item xs={12} md={4}>
+                <div className="gallery-gridspace">
                     <WritingOptionCard 
-                    text="Random Object" 
+                    text="RANDOM OBJECT" 
                     prompt={objectPrompt} 
                     />
                 </div>
             </Grid>
-            <Grid item xs={4} md={4}>
-                <div className="gridspace">
+            <Grid item xs={12} md={4}>
+                <div className="gallery-gridspace">
                     <WritingOptionCard 
-                    text="Era" 
+                    text="ERA" 
                     prompt={eraPrompt} 
                     />
                 </div>
             </Grid>
-            <Grid item xs={4} md={4}>
-                <div className="gridspace">
+            <Grid item xs={12} md={4}>
+                <div className="gallery-gridspace">
                     <WritingOptionCard 
-                    text="Country"
+                    text="COUNTRY"
                     prompt={countryPrompt} 
                     />
                 </div>

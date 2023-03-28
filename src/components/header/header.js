@@ -9,6 +9,9 @@ import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import muiLink from '@mui/material/Link';
+
+
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 
 
@@ -77,9 +80,10 @@ function Header() {
                     }}
                     >
                     {pages.map((page) => (
-                <MenuItem component = {Link} to = "Coding"  key={page} onClick={handleCloseNavMenu}>
+                <Link to="Coding"> <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
+                </Link>
               ))}
                     </Menu>
                 </Box>

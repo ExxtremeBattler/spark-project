@@ -86,7 +86,7 @@ function Header() {
                     }}
                     >
                     {pages.map((page) => (
-                 <MenuItem href = {page.linkTarget} key={page.text} onClick={handleCloseNavMenu}>
+                 <MenuItem href = {page.linkTarget} component="a" key={page.text} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page.text}</Typography>
                 </MenuItem>
                 

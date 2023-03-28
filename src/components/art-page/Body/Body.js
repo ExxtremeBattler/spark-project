@@ -1,16 +1,12 @@
-//BEFORE - display when selecting time
-//grid - two squares; left displays question mark (placeholder for prompts), right displays radio buttons
-//AFTER - display when showing prompts and countdown
-//grid - two squares; left displays prompts, right displays timer
-
 
 import React, { useState } from "react";
+import Instructions from "./Instructions";
 import Grid from "@mui/system/Unstable_Grid/Grid";
 import Placeholder from "./Placeholder";
 import RadioBtns from "./RadioBtns";
-import DrawPrompts from '../../../prompts/drawing-prompts.json'
 import StartBtn from "./StartBtn";
 import Timer from "./Timer";
+import Pixabay from "../../Pixabay";
 import './Body.css'
 
 function Body() {
@@ -24,18 +20,11 @@ function Body() {
     const [selection, setSelection] = useState();
     const [start, setStart] = useState(false);
 
-
-    //art prompt random selection
-    const promptList = DrawPrompts;
-    // console.log(promptList);
-    const artPrompt = promptList[Math.floor(Math.random()*promptList.length)];
-    // console.log(artPrompt);
-
     //conditional rendering of page display
-
     if (start === false){
         return ( 
-            <div div className="pagebody"> 
+            <div div className="pagebody">
+                <Instructions />
                 <Grid className="gridcontainer" container spacing={1}>
                     <Grid className="gridspace left" item xs={5.5}>
                         <Placeholder />
@@ -53,7 +42,7 @@ function Body() {
                 <Grid className="gridcontainer" container spacing={1}>
                     <Grid className="gridspace left" item xs={7}>
                         <div>
-                            <h2 className="prompt-text">{artPrompt}</h2>
+                            <Pixabay />
                         </div>
                     </Grid>
                     <Grid className="gridspace right" item xs={4}>

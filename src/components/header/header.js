@@ -115,7 +115,7 @@ function Header() {
             {pages.map((page) => (
               
 
-              <Button
+              <div> <Button
                 href = {page.link}
                 key={page.name}
                 onClick={handleCloseNavMenu}
@@ -123,6 +123,7 @@ function Header() {
               >
                 {page}
               </Button>
+              </div>
             ))}
           </Box>
 

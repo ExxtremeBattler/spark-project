@@ -10,7 +10,7 @@ function Landing() {
 
     return ( 
 
-        <div className='contentContainer'>
+        <div className='contentContainerlanding'>
             <div className='footerSpacer'>
                 <MainGallery/>
                 <Footer />

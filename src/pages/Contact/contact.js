@@ -7,9 +7,8 @@ import './contact.css';
 function Contact() {
     return (  
 
-        <div className='contentContainer'>
+        <div className='contentContainerContact'>
             <div className='footerSpacer'>
-                <Header />
                 <ContactGallery />
                 <Footer />
             </div>

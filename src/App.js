@@ -12,6 +12,9 @@ import Footer from "./components/footer/footer"
 // writing imports
 import Gallery from './components/writingPromptsGallery/Gallery';
 
+// drawing imports
+import Art from "./pages/Art/Art"
+
 // coding imports
 import CodingPromptsDifficulty from "./components/codingPromptsDifficulty/codingPromptsDifficulty"
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
@@ -35,7 +38,7 @@ function App() {
 
         <Route path="/" element = {<Landing />} />
         <Route path="Writing" element = {<Gallery />} />
-        {/* <Route path="Drawing" element = {< />} /> */}
+        <Route path="Drawing" element = {<Art/>} />
         <Route path="Coding" element = {<CodingPromptsDifficulty />} />
         <Route path="Contact" element = {<Contact />}/>
 

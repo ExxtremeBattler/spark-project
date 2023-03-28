@@ -20,7 +20,7 @@ function MainGallery() {
         <Grid>
             <Grid item xs={12}>
                 
-                <div className="maingridspace">
+                <div className="maingridspace" id='sparklogodiv'>
                     <LogoButton />
                 </div>
             </Grid>

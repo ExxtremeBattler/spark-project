@@ -29,7 +29,7 @@ function App() {
       <div>
         <Routes>
 
-        <Route path="/" element = {<CodingPromptsDifficulty />} />
+        <Route path="/" element = {<Landing />} />
         <Route path="Writing" element = {<Gallery />} />
         {/* <Route path="Drawing" element = {< />} /> */}
         <Route path="Coding" element = {<CodingPromptsDifficulty />} />

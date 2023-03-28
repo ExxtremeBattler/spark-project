@@ -8,9 +8,7 @@ function Writing() {
     return ( 
     <div className='contentContainer'>
         <div className='footerSpacer'>
-            <Header />
             <Gallery/>
-            <Footer />
         </div>
     </div> 
     );

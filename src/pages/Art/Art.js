@@ -8,9 +8,7 @@ function Art() {
     return ( 
         <div className='contentContainer'>
             <div className='footerSpacer'>
-                <Header />
                 <Body/>
-                <Footer />
             </div>
         </div>
     );

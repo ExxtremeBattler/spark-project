@@ -122,9 +122,7 @@ function Header() {
             ))}
           </Box>
 
-          <Routes>
-            <Route path = "Writing" element = {<Gallery />} > </Route>
-          </Routes>
+        
         </Toolbar>
       </Container>
     </AppBar>

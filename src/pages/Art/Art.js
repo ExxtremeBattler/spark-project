@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from '../../components/footer/footer';
-import Header from '../../components/header/header';
 import Body from '../../components/art-page/Body/Body'
+import Footer from '../../components/footer/footer';
+
 import './Art.css'
 
 function Art() {
@@ -9,6 +9,7 @@ function Art() {
         <div className='contentContainer'>
             <div className='footerSpacer'>
                 <Body/>
+                <Footer />
             </div>
         </div>
     );

@@ -1,7 +1,6 @@
 import React from "react";
-import Footer from '../../components/footer/footer';
-import Header from '../../components/header/header';
 import Gallery from '../../components/writingPromptsGallery/Gallery'
+import Footer from '../../components/footer/footer';
 import './Writing.css'
 
 function Writing() {
@@ -9,6 +8,7 @@ function Writing() {
     <div className='contentContainer'>
         <div className='footerSpacer'>
             <Gallery/>
+            <Footer />
         </div>
     </div> 
     );

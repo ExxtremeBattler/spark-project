@@ -25,17 +25,18 @@ function App() {
     <div className="App">
       <Header /> 
       {/* navbar will render across all pages */}
-      
+
       <div>
         <Routes>
-        <Route path="/" element = {<Landing />} />
+
+        <Route path="/" element = {<CodingPromptsDifficulty />} />
         <Route path="Writing" element = {<Gallery />} />
         {/* <Route path="Drawing" element = {< />} /> */}
         <Route path="Coding" element = {<CodingPromptsDifficulty />} />
 
-
         </Routes>
       </div>
+
     </div>
     </Router>
   );

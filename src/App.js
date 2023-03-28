@@ -7,6 +7,7 @@ import Header from './components/header/header';
 // landing page imports
 import Contact from './pages/Contact/contact';
 import Landing from './pages/Landing/Landing';
+import Footer from "./components/footer/footer"
 
 // writing imports
 import Gallery from './components/writingPromptsGallery/Gallery';
@@ -26,7 +27,7 @@ function App() {
       <Header /> 
       {/* navbar will render across all pages */}
 
-      <div>
+      <div className='Routing'>
         <Routes>
 
         <Route path="/" element = {<Landing />} />
@@ -36,8 +37,9 @@ function App() {
 
         </Routes>
       </div>
-
+      <Footer />
     </div>
+
     </Router>
   );
 }

@@ -12,9 +12,15 @@ import Footer from "./components/footer/footer"
 // writing imports
 import Gallery from './components/writingPromptsGallery/Gallery';
 
+// drawing imports
+import Art from "./pages/Art/Art"
+
 // coding imports
 import CodingPromptsDifficulty from "./components/codingPromptsDifficulty/codingPromptsDifficulty"
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
+import CodingPromptsChallengeBeginner from './components/codingPromptsChallenge/codingPromptsChallengeBeginner';
+import CodingPromptsChallengeIntermediate from './components/codingPromptsChallenge/codingPromptsChallengeIntermediate';
+import CodingPromptsChallengeHard from './components/codingPromptsChallenge/codingPromptsChallengeHard';
 
 
 
@@ -32,8 +38,15 @@ function App() {
 
         <Route path="/" element = {<Landing />} />
         <Route path="Writing" element = {<Gallery />} />
-        {/* <Route path="Drawing" element = {< />} /> */}
+        <Route path="Drawing" element = {<Art/>} />
         <Route path="Coding" element = {<CodingPromptsDifficulty />} />
+        <Route path="Contact" element = {<Contact />}/>
+
+        {/* routes specifically for coding section */}
+        <Route path="Beginner" element= {<CodingPromptsChallengeBeginner/> } />
+        <Route path="Intermediate" element= {<CodingPromptsChallengeIntermediate />} />
+        <Route path="Hard" element= {<CodingPromptsChallengeHard />} />
+
 
         </Routes>
       </div>

@@ -1,5 +1,19 @@
+import React from "react";
+import Footer from '../../components/footer/footer';
+import Header from '../../components/header/header';
+import Body from '../../components/art-page/Body/Body'
+import './Art.css'
+
 function Art() {
-    return (  );
+    return ( 
+        <div className='contentContainer'>
+            <div className='footerSpacer'>
+                <Header />
+                <Body/>
+                <Footer />
+            </div>
+        </div>
+    );
 }
 
 export default Art;

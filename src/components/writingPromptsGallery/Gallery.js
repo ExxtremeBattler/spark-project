@@ -26,10 +26,10 @@ function Gallery() {
     const countryPrompt = country[Math.floor(Math.random()*country.length)]
 
     return ( 
-        <>
+        <body>
         <Instructions />
         <Grid className="gallery-gridcontainer" container spacing={1}>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={6} md={4}>
                 <div className="gallery-gridspace">
                     <WritingOptionCard 
                         text="GENRE"
@@ -37,7 +37,7 @@ function Gallery() {
                     />
                 </div>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={6} md={4}>
                 <div className="gallery-gridspace">
                     <WritingOptionCard 
                     text="LOCATION" 
@@ -45,7 +45,7 @@ function Gallery() {
                     />
                 </div>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={6} md={4}>
                 <div className="gallery-gridspace">
                     <WritingOptionCard 
                     text="WEATHER" 
@@ -53,7 +53,7 @@ function Gallery() {
                     />
                 </div>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={6} md={4}>
                 <div className="gallery-gridspace">
                     <WritingOptionCard 
                     text="RANDOM OBJECT" 
@@ -61,7 +61,7 @@ function Gallery() {
                     />
                 </div>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={6} md={4}>
                 <div className="gallery-gridspace">
                     <WritingOptionCard 
                     text="ERA" 
@@ -69,7 +69,7 @@ function Gallery() {
                     />
                 </div>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} sm={6} md={4}>
                 <div className="gallery-gridspace">
                     <WritingOptionCard 
                     text="COUNTRY"
@@ -78,7 +78,7 @@ function Gallery() {
                 </div>
             </Grid>
         </Grid>
-    </>
+    </body>
     );
 }
 

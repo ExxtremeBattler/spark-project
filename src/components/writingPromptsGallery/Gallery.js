@@ -2,6 +2,7 @@
 // Docs: https://mui.com/material-ui/api/grid/
 
 import React from 'react';
+import Instructions from './Instructions';
 import Grid from '@mui/material/Grid';
 import WritingOptionCard from '../WritingOptionCard';
 import './Gallery.css'
@@ -25,6 +26,8 @@ function Gallery() {
     const countryPrompt = country[Math.floor(Math.random()*country.length)]
 
     return ( 
+        <>
+        <Instructions />
         <Grid container spacing={2}>
             <Grid item xs={4} md={4}>
                 <div className="gridspace">
@@ -75,6 +78,7 @@ function Gallery() {
                 </div>
             </Grid>
         </Grid>
+    </>
     );
 }
 

@@ -6,7 +6,7 @@ import Placeholder from "./Placeholder";
 import RadioBtns from "./RadioBtns";
 import StartBtn from "./StartBtn";
 import Timer from "./Timer";
-import Pixabay from "../../Pixabay";
+import Pixabay from "../../../utils/Pixabay";
 import './Body.css'
 
 function Body() {

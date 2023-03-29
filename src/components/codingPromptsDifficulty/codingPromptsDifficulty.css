@@ -1,45 +1,24 @@
 .CodingPromptsDifficulty{
     color: rgba(4, 1, 1, 0.944);
     font-family:Arial, Helvetica, sans-serif
-    
-
-
 }
 
 .difficultyHeader{
     color: aliceblue;
+    background-color: rgba(4, 1, 1, 0.7);
+    text-align: center;
+    padding: 20px 0px;
 }
 
-body{
-    background-color: rgba(4, 1, 1, 0.944);
-}
+/* body{
+    background-color: ;
+} */
 
-.BeginnerButton{
-    position: relative;
-    bottom: 130px;
-    left: 200px;
-}
-
-.IntermediateButton{
-    position: relative;
-    bottom: 190px;
-    left: 462px;
-}
-
-.HardButton{
-    position: relative;
-    bottom: 250px;
-    left: 725px;
-}
-
-.GoButton{
-    position: relative;
-    left: 520px;
-    bottom: 60px;
-}
-
-.btn{
-    color: purple;
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .dot {
@@ -49,11 +28,22 @@ body{
     border-radius: 50%;
     padding: 71px;
     margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.diff-button {
+    font-family: 'Arial, Helvetica, sans-serif'; 
+    color: rgb(255, 255, 255);
+    max-width: 230px;  
+    border-radius: 8px;
+    font-family: 'Delicious Handrawn' !important;
+    font-size: 4rem;
+}
 
-    position:relative;
-    top: 40px;
-    left: 200px;
-
-    
-  }
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -28,16 +28,35 @@ function MainGallery() {
 
         <Grid container spacing={2}>
             <Grid item xs={12} md={4}>
-                <div className="maingridspace"><MainButton href="Writing" text='Writing Prompts' icon=<HistoryEduIcon sx={{ fontSize: 80 }}/> /></div>
+                <div className="maingridspace">
+                    <MainButton 
+                        href="Writing" 
+                        text='Writing Prompts' dialogTitleforTarget='Writing Prompts'
+                        dialogTextforTarget='Create a short story using up to seven prompts. Click on the prompts of your choosing and then start writing!'
+                        icon=<HistoryEduIcon sx={{ fontSize: 80 }} /> />
+                </div>
             </Grid>
             <Grid item xs={12} md={4}>
-                <div className="maingridspace"><MainButton href= "Drawing" text='Drawing prompts' icon=<ColorLensIcon sx={{ fontSize: 80 }}/> /></div>
+                <div className="maingridspace">
+                    <MainButton 
+                    href= "Drawing" 
+                    text='Drawing prompts' 
+                    dialogTitleforTarget='Drawing Prompts'
+                    dialogTextforTarget='You have a choice of 3 time periods. Two random pictures will show up on the screen - your job is to combine the two before the counter reaches 0. Good luck!'
+                    icon=<ColorLensIcon sx={{ fontSize: 80 }}/> /></div>
             </Grid>
             <Grid item xs={12} md={4} >
-                <div className="maingridspace"><MainButton href= "Coding" text='Coding Prompts' icon=<CodeIcon sx={{ fontSize: 80 }}/> /></div>
+                <div className="maingridspace">
+                    <MainButton 
+                    href= "Coding" 
+                    text='Coding Prompts' 
+                    dialogTitleforTarget='Coding Prompts'
+                    dialogTextforTarget='Do you find yourself wanting to code but not knowing what to create? The go to our coding prompts section to be given project ideas based on your experiance level'
+                    icon=<CodeIcon sx={{ fontSize: 80 }}/> /></div>
             </Grid>
         </Grid>
 
+      
         <Routes>
         <Route path="Writing" element = {<Gallery/>} />
         {/* <Route path= "Drawing" element = {<ProjectGallery />} /> */}

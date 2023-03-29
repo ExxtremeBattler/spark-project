@@ -1,6 +1,8 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import { animated, useSpring } from '@react-spring/web';
 import './button.css'
+import {Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Button, Typography} from '@mui/material';
+import { fontSize } from '@mui/system';
 
 
 
@@ -19,16 +21,35 @@ function MainButton(props) {
         })
       }
     
+    const [open, setOpen] = useState(false);
 
     return (
-        
-        <animated.button style={{...springs}} onMouseEnter={handleHover} className='mainbutton'>
+        <>
+        <div>
+          <Dialog open={open} onClose={()=>setOpen(false)}>
+            <DialogTitle>
+              <Typography sx={{fontFamily:'Delicious Handrawn', fontSize:50}}>
+                {props.dialogTitleforTarget}
+              </Typography>
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText>
+                {props.dialogTextforTarget}
+              </DialogContentText>
+            </DialogContent>
+              <DialogActions>
+                <Button onClick={()=>setOpen(false)}>Close</Button>
+              </DialogActions>
+
+          </Dialog>
+        </div>
+        <animated.button style={{...springs}} onMouseEnter={handleHover} className='mainbutton' onClick={()=>setOpen(true)}>
           <div>
             {props.icon}
           </div>
             {props.text}
         </animated.button>
-
+        </>
 )}
 
 export default MainButton;

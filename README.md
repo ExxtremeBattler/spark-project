@@ -43,6 +43,9 @@ The drawing page challenges the user to draw something from two image prompts wi
 
 ![image](https://user-images.githubusercontent.com/69109391/228550126-14c3862b-dc20-4402-aa62-6e382d0503b6.png)
 
+![image](https://user-images.githubusercontent.com/69109391/228556880-6cdde2cd-cb9c-427a-89fb-01a78d71f508.png)
+
+
 ### Coding
 
 The coding prompts page allows the user to select their desired difficulty by clicking one of the option buttons. On clicking, the user is presented with a task to try that matches this difficulty. The user can refresh the page for a new challenge, or use the navbar to go back to the coding prompts landing page to change difficulty. Previous projects that the app has set for the user is also displayed on the page.
@@ -52,15 +55,19 @@ The coding prompts page allows the user to select their desired difficulty by cl
 
 ## Development and Credits
 
-This app is build in [React](https://react.dev/) using create-react-app. It was written in JavaScript, JSX and CSS.
+This app is built in [React](https://react.dev/) using create-react-app. It was written in JavaScript, JSX and CSS.
 
 The app includes components from [Material UI](https://mui.com/material-ui/getting-started/overview/)
-Animations in the app were made using [React Spring](https://www.react-spring.dev/)
-The countdown timer was made with [React Countdown](https://www.npmjs.com/package/react-countdown)
-The previous coding projects are called from [local storage](https://javascript.info/localstorage)
-Images are generated using the [Pixabay API](https://pixabay.com/api/docs/)
-The Spark logo uses the [Broetown Signature](https://www.1001fonts.com/broetown-signature-font.html)font.
 
+Animations in the app were made using [React Spring](https://www.react-spring.dev/)
+
+The countdown timer was made with [React Countdown](https://www.npmjs.com/package/react-countdown)
+
+The previous coding projects are called from [local storage](https://javascript.info/localstorage)
+
+Images are generated using the [Pixabay API](https://pixabay.com/api/docs/)
+
+The Spark logo uses the [Broetown Signature](https://www.1001fonts.com/broetown-signature-font.html)font.
 
 ## Contributors 
 

@@ -1,10 +1,100 @@
-.gridspace {
-    background-color: rgb(255, 255, 255);
-    border: 2px solid black;
-    min-height: 200px;
-    max-width: 400px;
-    margin: 0 auto;
-    margin-top: 30px;
+body {
+    background: url(../../utils/images/alexander-grey-p203ekCK4Ac-unsplash.jpg);
+    background-size: cover;
+}
+
+
+.writing-instruct-div {
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: 1.6rem;
     display: flex;
     justify-content: center;
 }
+
+.writing-instructions {
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 15px 25px;
+}
+
+
+/* grid container has both grid suqares (grid spaces) */
+.gallery-gridcontainer {
+    max-height: 220px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.gallery-gridspace {
+    /* border: 2px solid black; */
+    max-height: 220px !important;
+    min-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ---------------------------*/
+/* prompt cards - before */
+.prompt-option-card{
+    max-height: 220px !important;
+    min-height: 220px !important;
+    min-width: 350px !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.prompt-option-btn {
+    background-color: white;
+    font-family: 'Delicious Handrawn';
+    background-color: black;
+    font-size: 3rem;
+    width: 300px;
+}
+
+
+
+/* */
+/* */
+/* -------------------------- */
+/*prompt cards - after*/
+.prompt-display-card {
+    max-height: 220px !important;
+    min-height: 220px;
+    min-width: 400px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0px;
+    
+
+}
+/* */
+.prompt-display-label {
+    color: black;
+    font-family: 'Delicious Handrawn';
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin: 0px 20px;
+    width: 300px;
+    text-align: center;
+    background-color: blueviolet;
+
+}
+/* */
+.prompt-text {
+    font-family: 'Delicious Handrawn';
+    color: purple;
+    font-size: 2.5rem;
+    padding: 0;
+}
+/* */

@@ -1,5 +1,9 @@
 .CodingPromptsChallenge{
-  font-family:Arial, Helvetica, sans-serif
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -7,42 +11,59 @@
     border-radius: 25px;
   border: 2px ridge black;
   padding: 20px;
-  width: 520px;
-  height: 150px;  
+  min-width: 400px;
+  max-width: 520px;
+  min-height: 200px;
   background: url("../../utils/images/paper.jpeg");
-
-  position: relative;
-  top: 100px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  overflow-wrap: break-word;
   }
 
   .challengeHeader{
-    position: relative;
-    left: 32%;
+    text-align:center;
+    font-size: 2rem;
+    font-family: 'Delicious Handrawn';
+    padding-top: 0px;
+    margin-top: 0px;
+
   }
 
   .challengeDesc{
-    position: relative;
-    left: 26%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
   }
 
   .refreshReminder{
-    position: relative;
-    left: 26%;
-
+    text-align:center;
+    font-family: 'Delicious Handrawn';
+    font-size: 1.4rem;
+    color: rgb(0, 160, 152);
   }
 
   .square2{
+    text-align: center;
     height: 150px;
-    width: 520px;
+    max-width: 520px;
+    min-width: 400px;
     padding: 20px;
     border-radius: 25px 15px;
     border: 2px ridge black;
     background: url("../../utils/images/paper.jpeg");
     background-position: center;
+  }
 
-    position: relative;
-    left: 700px;
-    bottom: 100px;
+  .storageHeader {
+    font-family: 'Delicious Handrawn';
+    font-size: 2rem;
+    margin-top: 0px;
+  }
 
-    
+  .storageList {
+    color: rgb(0, 160, 152);
+  }
+
+  li {
+    list-style-image: url("../../utils/images/bulbfavicon.png")
   }

@@ -23,6 +23,8 @@ function MainButton(props) {
     
     const [open, setOpen] = useState(false);
 
+
+
     return (
         <>
         <div>
@@ -39,6 +41,7 @@ function MainButton(props) {
             </DialogContent>
               <DialogActions>
                 <Button onClick={()=>setOpen(false)}>Close</Button>
+                <Button href={props.href} onClick={()=>setOpen(false)}>Let's Go!</Button>
               </DialogActions>
 
           </Dialog>

@@ -33,60 +33,60 @@ function CodingPromptsDifficulty() {
     return (
         <div className="CodingPromptsDifficulty">
             
-            <h2 className="difficultyHeader"> Difficulty : {difficulty} </h2>
+            <h2 className="difficultyHeader"> Select a difficulty to receive a challenge! {difficulty} </h2>
 
-            <Grid container spacing={2} columns={3}> 
-            
-            <div className="dot"> </div>
-            <div className="dot"> </div>
-            <div className="dot"> </div>
+            <Grid className="grid-container" container spacing={2}> 
+{/* columns={3}  */}
+            <Grid className="grid-item" item xs={12} md={4}>
+            <div className="dot dot1"> 
+                <div className="BeginnerButton"> 
 
+                    <Button variant = "contained"
+                    className="diff-button" 
+                    size = "large" 
+                    color="success" 
+                    href= "Beginner"
+                    onClick={() => setDifficulty("Beginner")}
+                    style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize:30, color: "black", backgroundColor: "green"}}
+                    > Beginner 
+                    </Button>
 
-            <Grid item xs={4}>
-
-            <div className="BeginnerButton"> 
-
-            <Button variant = "contained" 
-            size = "large" 
-            color="success" 
-            href= "Beginner"
-            onClick={() => setDifficulty("Beginner")}
-            style={{ fontFamily: 'Arial, Helvetica, sans-serif', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "green", width: "230px", borderRadius: 8  }}
-            > Beginner 
-            </Button>
-
+                </div>
             </div>
-
             </Grid>
-
-            <Grid item xs={4}>
-            <div className="IntermediateButton">
-            <Button variant = "contained" 
-            href= "Intermediate"
-            size = "large" 
-            onClick={() => setDifficulty("Intermediate")}
-            style={{ fontFamily: 'Arial, Helvetica, sans-serif', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "blue", width: "230px",  borderRadius: 8}}
-            > Intermediate
             
-            </Button>
             
+            <Grid className="grid-item" item xs={12} md={4}>
+            <div className="dot dot2"> 
+                <div className="IntermediateButton">
+                    <Button variant = "contained" 
+                    className="diff-button"
+                    href= "Intermediate"
+                    size = "large" 
+                    onClick={() => setDifficulty("Intermediate")}
+                    style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize:30, color: "black", backgroundColor: "blue"}}
+                    > Intermediate
+                    </Button>
+                </div>
             </div>
             </Grid>
 
-            <Grid item xs={4}>
-
+            <Grid className="grid-item" item xs={12} md={4}>
+            <div className="dot dot3"> 
             <div className="HardButton">
 
             <Button 
+            className="diff-button"
             variant = "contained" 
             size = "large" 
             href= "Hard"
             onClick={() => setDifficulty("Hard")}
-            style={{ fontFamily: 'Arial, Helvetica, sans-serif', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "red", width: "230px",  borderRadius: 8}}> Hard 
+            style={{ fontFamily: 'Arial, Helvetica, sans-serif', fontSize:30, color: "black", backgroundColor: "red"}}
+            > Hard 
             </Button>
 
             </div>
-
+</div>
             </Grid>
 
             </Grid>
@@ -108,6 +108,7 @@ function CodingPromptsDifficulty() {
         </div>
     )
 }
+
 
 
 

@@ -67,7 +67,7 @@ The previous coding projects are called from [local storage](https://javascript.
 
 Images are generated using the [Pixabay API](https://pixabay.com/api/docs/)
 
-The Spark logo uses the [Broetown Signature](https://www.1001fonts.com/broetown-signature-font.html)font.
+The Spark logo uses the [Broetown Signature](https://www.1001fonts.com/broetown-signature-font.html) font.
 
 ## Contributors 
 

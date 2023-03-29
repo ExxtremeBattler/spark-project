@@ -7,6 +7,8 @@ import subject from '../prompts/prompts-subjects.json'
 
 
 function Pixabay() {
+    const REACT_APP_PIXABAY_API_KEY= "34641504-ede8faf3281ff4dfa2566efc0";
+
     const subj = subject[Math.floor(Math.random()*subject.length)]
     console.log(subj);
     const sett = setting[Math.floor(Math.random()*setting.length)]
@@ -16,13 +18,14 @@ function Pixabay() {
     const [picTwo, setPicTwo] = useState(null);
 
     useEffect(() => {
-        fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&safesearch=true&q=${subj}`)
-        .then((res) => res.json())
+        fetch(`https://pixabay.com/api/?key=${REACT_APP_PIXABAY_API_KEY}&safesearch=true&q=${subj}`)
+        .then((res) => {console.log(res); return res.json()}
+        )
         .then((data) => {
             console.log(data)
             setPic(data.hits[0].webformatURL)
         }).then()
-        fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&safesearch=true&q=${sett}`)
+        fetch(`https://pixabay.com/api/?key=${REACT_APP_PIXABAY_API_KEY}&safesearch=true&q=${sett}`)
         .then((res) => res.json())
         .then((data) => {
             console.log(data)

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./codingPromptsChallenge.css"
-
+import Footer from '../../components/footer/footer'
 import challenges from "../../prompts/coding-prompts.json"
 
 let currentChallenge = ""
@@ -43,6 +43,9 @@ function CodingPromptsChallengeIntermediate() {
 
 
     return(
+
+        <>
+
         <div className="CodingPromptsChallenge">
             
             <div className="square"> 
@@ -66,6 +69,10 @@ function CodingPromptsChallengeIntermediate() {
             
 
         </div>
+
+        <Footer />
+        
+        </>
     )
 }
 

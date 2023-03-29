@@ -8,7 +8,7 @@ import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 import CodingPromptsChallengeBeginner from "../codingPromptsChallenge/codingPromptsChallengeBeginner"
 import CodingPromptsChallengeIntermediate from "../codingPromptsChallenge/codingPromptsChallengeIntermediate"
 import CodingPromptsChallengeHard from "../codingPromptsChallenge/codingPromptsChallengeHard"
-
+import Footer from '../../components/footer/footer'
 
 
 function CodingPromptsDifficulty() {
@@ -96,7 +96,7 @@ function CodingPromptsDifficulty() {
             style={{ fontFamily: 'bradley hand, cursive', backgroundColor: "gray", borderRadius: 8}}
             className = "GoButton"> LET'S CODE! </Button> */}
 
-
+            <Footer />
 
             <Routes> 
                 <Route path="Beginner" element= {renderBeginner()}></Route>

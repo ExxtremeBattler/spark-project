@@ -3,6 +3,10 @@ body {
     background-size: cover;
 }
 
+.writing-body {
+    background: transparent;
+}
+
 
 .writing-instruct-div {
     /* background-color: rgba(0, 0, 0, 0.7); */

@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import muiLink from '@mui/material/Link';
+import LogoForHeader from '../LogoForHeader'
 
 //page imports
 import Gallery from "../writingPromptsGallery/Gallery"
@@ -94,7 +95,7 @@ function Header() {
                     </Menu>
                 </Box>
             
-                <Typography
+                {/* <Typography
             variant="h5"
             noWrap
             component="a"
@@ -111,7 +112,13 @@ function Header() {
             }}
           >
             Spark
-          </Typography>
+          </Typography> */}
+
+          <LogoForHeader 
+          style={{
+            maxHeight: 68,
+          }}
+          />
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } } }>
 

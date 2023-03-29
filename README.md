@@ -50,7 +50,10 @@ The drawing page challenges the user to draw something from two image prompts wi
 
 The coding prompts page allows the user to select their desired difficulty by clicking one of the option buttons. On clicking, the user is presented with a task to try that matches this difficulty. The user can refresh the page for a new challenge, or use the navbar to go back to the coding prompts landing page to change difficulty. Previous projects that the app has set for the user is also displayed on the page.
 
+![image](https://user-images.githubusercontent.com/69109391/228591296-c0d09af7-ef5f-4737-90be-659ed357b0e0.png)
 
+
+![image](https://user-images.githubusercontent.com/69109391/228591344-a4c7ffa9-a7fd-4f6a-a33e-424f8de63aca.png)
 
 
 ## Development and Credits

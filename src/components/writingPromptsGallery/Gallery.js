@@ -13,6 +13,7 @@ import weather from '../../prompts/writing-prompts-weather.json'
 import objects from '../../prompts/writing-prompt-objects.json'
 import era from '../../prompts/writing-prompts-era.json'
 import country from '../../prompts/writing-prompts-country.json'
+import Footer from '../../components/footer/footer'
 
 
 
@@ -26,6 +27,7 @@ function Gallery() {
     const countryPrompt = country[Math.floor(Math.random()*country.length)]
 
     return ( 
+        <>
         <body className='writing-body'>
         <Instructions />
         <Grid className="gallery-gridcontainer" container spacing={1}>
@@ -79,6 +81,10 @@ function Gallery() {
             </Grid>
         </Grid>
     </body>
+
+    <Footer />
+
+    </>
     );
 }
 

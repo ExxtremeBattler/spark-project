@@ -43,12 +43,13 @@ function CodingPromptsChallengeIntermediate() {
 
 
     return(
-        <div className="CodingPromptsChallengeHard">
+        <div className="CodingPromptsChallenge">
             
             <div className="square"> 
 
             <h2 className="challengeHeader"> Intermediate </h2>
             <p className="challengeDesc">{currentChallenge} </p>
+            <p className= "refreshReminder"> Refresh for a new challenge!</p>
 
             </div>
 

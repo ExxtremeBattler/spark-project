@@ -51,7 +51,7 @@ function CodingPromptsDifficulty() {
             color="success" 
             href= "Beginner"
             onClick={() => setDifficulty("Beginner")}
-            style={{ fontFamily: 'bradley hand, cursive', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "green", width: "230px", borderRadius: 8  }}
+            style={{ fontFamily: 'Arial, Helvetica, sans-serif', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "green", width: "230px", borderRadius: 8  }}
             > Beginner 
             </Button>
 
@@ -65,7 +65,7 @@ function CodingPromptsDifficulty() {
             href= "Intermediate"
             size = "large" 
             onClick={() => setDifficulty("Intermediate")}
-            style={{ fontFamily: 'bradley hand, cursive', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "blue", width: "230px",  borderRadius: 8}}
+            style={{ fontFamily: 'Arial, Helvetica, sans-serif', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "blue", width: "230px",  borderRadius: 8}}
             > Intermediate
             
             </Button>
@@ -82,7 +82,7 @@ function CodingPromptsDifficulty() {
             size = "large" 
             href= "Hard"
             onClick={() => setDifficulty("Hard")}
-            style={{ fontFamily: 'bradley hand, cursive', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "red", width: "230px",  borderRadius: 8}}> Hard 
+            style={{ fontFamily: 'Arial, Helvetica, sans-serif', backgroundColor: "rgba(4, 1, 1, 0.944)", color: "red", width: "230px",  borderRadius: 8}}> Hard 
             </Button>
 
             </div>

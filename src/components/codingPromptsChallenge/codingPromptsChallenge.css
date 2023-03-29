@@ -1,11 +1,18 @@
+.CodingPromptsChallenge{
+  font-family:Arial, Helvetica, sans-serif
+}
+
 
 .square {
     border-radius: 25px;
   border: 2px ridge black;
   padding: 20px;
   width: 520px;
-  height: 520px;  
+  height: 150px;  
   background: url("../../utils/images/paper.jpeg");
+
+  position: relative;
+  top: 100px;
   }
 
   .challengeHeader{
@@ -15,12 +22,17 @@
 
   .challengeDesc{
     position: relative;
-    left: 40%;
-    top: 10%;
+    left: 26%;
+  }
+
+  .refreshReminder{
+    position: relative;
+    left: 26%;
+
   }
 
   .square2{
-    height: 230px;
+    height: 150px;
     width: 520px;
     padding: 20px;
     border-radius: 25px 15px;
@@ -29,8 +41,8 @@
     background-position: center;
 
     position: relative;
-    bottom: 565px;
-    left: 50%;
+    left: 700px;
+    bottom: 100px;
 
     
   }

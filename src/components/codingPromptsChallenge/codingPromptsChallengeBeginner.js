@@ -43,12 +43,13 @@ function CodingPromptsChallengeBeginner() {
 
 
     return(
-        <div className="CodingPromptsChallengeBeginner">
+        <div className="CodingPromptsChallenge">
             
             <div className="square"> 
 
             <h2 className="challengeHeader"> Beginner </h2>
             <p className="challengeDesc">{currentChallenge} </p>
+            <p className= "refreshReminder"> Refresh for a new challenge!</p>
 
             </div>
 

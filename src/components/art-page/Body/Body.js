@@ -7,6 +7,7 @@ import RadioBtns from "./RadioBtns";
 import StartBtn from "./StartBtn";
 import Timer from "./Timer";
 import Pixabay from "../../../utils/Pixabay";
+import PixabayCredit from "../../PixabayCredit/PixabayCredit";
 import './Body.css'
 
 function Body() {
@@ -43,7 +44,9 @@ function Body() {
                     <Grid className="gridspace leftAfter" item xs={7}>
                         <div className="images-div">
                             <Pixabay />
+                            <PixabayCredit />
                         </div>
+                        
                     </Grid>
                     <Grid className="gridspace rightAfter" item xs={4}>
                         <div className="timeDisplay">

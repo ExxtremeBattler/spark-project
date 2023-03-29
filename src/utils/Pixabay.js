@@ -19,13 +19,13 @@ function Pixabay() {
         fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&safesearch=true&q=${subj}`)
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
-            setPic(data.hits[0].webformatURL);
+            console.log(data)
+            setPic(data.hits[0].webformatURL)
         }).then()
         fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&safesearch=true&q=${sett}`)
         .then((res) => res.json())
         .then((data) => {
-            console.log(data);
+            console.log(data)
             setPicTwo(data.hits[0].webformatURL)
         });
     }, [])

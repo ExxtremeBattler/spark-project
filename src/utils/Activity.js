@@ -8,7 +8,7 @@ function Activity() {
     const [activity, setActivity] = useState(null)
 
     useEffect(() => {
-        fetch('http://www.boredapi.com/api/activity/')
+        fetch('https://www.boredapi.com/api/activity/')
         .then((res) => res.json())
         .then((data) => {
             setActivity(data.activity);

@@ -26,7 +26,7 @@ function Gallery() {
     const countryPrompt = country[Math.floor(Math.random()*country.length)]
 
     return ( 
-        <body>
+        <body className='writing-body'>
         <Instructions />
         <Grid className="gallery-gridcontainer" container spacing={1}>
             <Grid item xs={12} sm={6} md={4}>

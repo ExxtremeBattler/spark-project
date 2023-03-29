@@ -7,13 +7,11 @@ body {
     background: transparent;
 }
 
-
+/* instructions */
 .writing-instruct-div {
-    /* background-color: rgba(0, 0, 0, 0.7); */
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    
     font-size: 1.6rem;
     display: flex;
     justify-content: center;
@@ -26,7 +24,7 @@ body {
 }
 
 
-/* grid container has both grid suqares (grid spaces) */
+/* grid container holds all grid squares */
 .gallery-gridcontainer {
     max-height: 220px !important;
     display: inline-flex;
@@ -64,9 +62,6 @@ body {
 }
 
 
-
-/* */
-/* */
 /* -------------------------- */
 /*prompt cards - after*/
 .prompt-display-card {
@@ -79,10 +74,8 @@ body {
     justify-content: center;
     margin-bottom: 20px;
     padding: 0px;
-    
-
 }
-/* */
+
 .prompt-display-label {
     color: black;
     font-family: 'Delicious Handrawn';
@@ -92,13 +85,11 @@ body {
     width: 300px;
     text-align: center;
     background-color: blueviolet;
-
 }
-/* */
+
 .prompt-text {
     font-family: 'Delicious Handrawn';
     color: purple;
     font-size: 2.5rem;
     padding: 0;
 }
-/* */

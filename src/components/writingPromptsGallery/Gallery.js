@@ -6,6 +6,7 @@ import Instructions from './Instructions';
 import Grid from '@mui/material/Grid';
 import WritingOptionCard from '../WritingOptionCard';
 import './Gallery.css'
+
 //importing prompts from JSONs
 import genres from '../../prompts/writing-prompts-genres.json'
 import locations from '../../prompts/writing-prompts-locations.json'
@@ -26,6 +27,8 @@ function Gallery() {
     const eraPrompt = era[Math.floor(Math.random()*era.length)]
     const countryPrompt = country[Math.floor(Math.random()*country.length)]
 
+
+    //each grid square contains the card that holds the prompt
     return ( 
         <>
         <body className='writing-body'>

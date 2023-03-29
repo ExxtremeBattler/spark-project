@@ -1,5 +1,6 @@
 /* Set max width of this card to whatever the Grid space is*/
-.prompt-option-card { /* card set in grid */
+ /* card set in grid */
+.prompt-option-card {
     max-width: 30%;
     min-height: 200px; /* Set to match gridspace */
     display: flex;
@@ -7,8 +8,8 @@
     border: none;
 }
 
-
-.prompt-option-btn { /* button styling */
+/* button styling */
+.prompt-option-btn { 
     background-color: black;
     color: white;
     font-size: 1.4rem;
@@ -22,6 +23,7 @@
 
 .prompt-option-btn:hover{
     background-color: grey;
+    cursor: pointer;
 }
 
 
@@ -31,12 +33,14 @@
     text-align: center;
 }
 
-.prompt-text { /* actual text of prompt */
+/* actual text of prompt */
+.prompt-text { 
     color: black;
     font-size: 1.8rem;
 }
 
-.prompt-display-label { /* word from props e.g. era, genre */
+/* word from props e.g. era, genre */
+.prompt-display-label { 
     background-color: rgb(102, 8, 253);
     color: white;
     font-size: 1.5rem;

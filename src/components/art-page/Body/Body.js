@@ -11,17 +11,10 @@ import PixabayCredit from "../../PixabayCredit/PixabayCredit";
 import './Body.css'
 
 function Body() {
-    // let selection = "Random"; //default
-    //handling random time selection;
-    // const timeChoice = ['1min', '5min', '10min'];
-    // let randomTime = timeChoice[Math.floor(Math.random() * timeChoice.length)];
-    // if (selection === "Random") {
-    //     selection = randomTime;
-    // };
     const [selection, setSelection] = useState();
     const [start, setStart] = useState(false);
 
-    //conditional rendering of page display
+    //conditional rendering of page display - displays timer choice or image promtps with countdown
     if (start === false){
         return ( 
             <div div className="pagebody">

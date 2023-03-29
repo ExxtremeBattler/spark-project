@@ -1,7 +1,6 @@
 import React from "react";
 
 
-
 function Instructions() {
     return ( 
         <div className="writing-instruct-div">

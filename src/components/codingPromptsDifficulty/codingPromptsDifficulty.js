@@ -36,7 +36,6 @@ function CodingPromptsDifficulty() {
             <h2 className="difficultyHeader"> Select a difficulty to receive a challenge! {difficulty} </h2>
 
             <Grid className="grid-container" container spacing={2}> 
-{/* columns={3}  */}
             <Grid className="grid-item" item xs={12} md={4}>
             <div className="dot dot1"> 
                 <div className="BeginnerButton"> 
@@ -91,7 +90,8 @@ function CodingPromptsDifficulty() {
 
             </Grid>
 
-            {/* <Button variant = "contained" 
+            {/* start button - could be used later.
+            <Button variant = "contained" 
             size = "large" href={difficulty} 
             style={{ fontFamily: 'bradley hand, cursive', backgroundColor: "gray", borderRadius: 8}}
             className = "GoButton"> LET'S CODE! </Button> */}

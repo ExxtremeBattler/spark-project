@@ -25,7 +25,7 @@ function getChallengeIntermediate() {
     pastIntermediateChallenges.unshift(currentChallenge)
 
     pastIntermediateChallenges.length = 3
-    console.log(pastIntermediateChallenges);
+    // console.log(pastIntermediateChallenges);
 
     localStorage.setItem('pastIntermediateChallenges', JSON.stringify(pastIntermediateChallenges));
 

@@ -26,7 +26,7 @@ function getChallengeBeginner() {
     pastEasyChallenges.unshift(currentChallenge)
 
     pastEasyChallenges.length = 3
-    console.log(pastEasyChallenges);
+    // console.log(pastEasyChallenges);
 
     localStorage.setItem('pastEasyChallenges', JSON.stringify(pastEasyChallenges));
 

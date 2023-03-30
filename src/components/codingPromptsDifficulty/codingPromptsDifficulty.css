@@ -10,10 +10,6 @@
     padding: 20px 0px;
 }
 
-/* body{
-    background-color: ;
-} */
-
 .grid-container {
     display: flex;
     justify-content: center;
@@ -21,6 +17,7 @@
     margin: 0 auto;
 }
 
+/*dot = circle background on buttons*/
 .dot {
     height: 100px;
     width: 100px;

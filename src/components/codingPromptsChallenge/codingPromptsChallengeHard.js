@@ -26,7 +26,7 @@ function getChallengeHard() {
     pastHardChallenges.unshift(currentChallenge)
 
     pastHardChallenges.length = 3
-    console.log(pastHardChallenges);
+    // console.log(pastHardChallenges);
 
     localStorage.setItem('pastHardChallenges', JSON.stringify(pastHardChallenges));
 

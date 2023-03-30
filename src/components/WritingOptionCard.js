@@ -3,9 +3,10 @@ import Card from '@mui/material/Card';
 import "./WritingOptionCard.css"
 
 
+//props = content of prompt
 function WritingOptionCard(props) {
     const [prompt, setPrompt] = useState(false);
-    
+    //change to display prompts when clicked:
     const handlePrompt = () => {
         setPrompt(true);
     };

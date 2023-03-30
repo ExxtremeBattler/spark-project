@@ -9,14 +9,8 @@ import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import muiLink from '@mui/material/Link';
 import LogoForHeader from '../LogoForHeader'
 
-//page imports
-import Gallery from "../writingPromptsGallery/Gallery"
-
-
-import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 
 
 //nav bar link options

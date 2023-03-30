@@ -1,9 +1,8 @@
 import React from "react";
-import { useState, useEffect} from "react";
+import { useState} from "react";
 import Button from '@mui/material/Button';
 import "./codingPromptsDifficulty.css"
 import Grid from '@mui/material/Grid';
-import challenges from "../../prompts/coding-prompts.json"
 import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
 import CodingPromptsChallengeBeginner from "../codingPromptsChallenge/codingPromptsChallengeBeginner"
 import CodingPromptsChallengeIntermediate from "../codingPromptsChallenge/codingPromptsChallengeIntermediate"
@@ -13,7 +12,6 @@ import Footer from '../../components/footer/footer'
 
 function CodingPromptsDifficulty() {
     const [difficulty, setDifficulty] = useState("")
-    let selectedDifficulty = difficulty
 
     function renderBeginner() {
         return(<CodingPromptsChallengeBeginner />
@@ -89,12 +87,6 @@ function CodingPromptsDifficulty() {
             </Grid>
 
             </Grid>
-
-            {/* start button - could be used later.
-            <Button variant = "contained" 
-            size = "large" href={difficulty} 
-            style={{ fontFamily: 'bradley hand, cursive', backgroundColor: "gray", borderRadius: 8}}
-            className = "GoButton"> LET'S CODE! </Button> */}
 
             <Footer />
 

@@ -7,7 +7,6 @@ import Header from './components/header/header';
 // landing page imports
 import Contact from './pages/Contact/contact';
 import Landing from './pages/Landing/Landing';
-import Footer from "./components/footer/footer"
 
 // writing imports
 import Gallery from './components/writingPromptsGallery/Gallery';

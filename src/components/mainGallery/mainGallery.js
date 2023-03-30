@@ -7,12 +7,6 @@ import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import CodeIcon from '@mui/icons-material/Code';
 
-import Gallery from '../writingPromptsGallery/Gallery';
-import CodingPromptsDifficulty from "../codingPromptsDifficulty/codingPromptsDifficulty"
-import {BrowserRouter as Router, Route, Routes, Link} from "react-router-dom"
-
-
-
 function MainGallery() {
     return ( 
     <>
@@ -29,7 +23,7 @@ function MainGallery() {
         <Grid container spacing={2}>
             <Grid item xs={12} md={4}>
                 <div className="maingridspace">
-                    <MainButton 
+                    <MainButton
                         href="Writing" 
                         text='Writing Prompts' dialogTitleforTarget='Writing Prompts'
                         dialogTextforTarget='Create a short story using up to seven prompts. Click on the prompts of your choosing and then start writing!'
@@ -55,13 +49,6 @@ function MainGallery() {
                     icon=<CodeIcon sx={{ fontSize: 80 }}/> /></div>
             </Grid>
         </Grid>
-
-      
-        <Routes>
-        <Route path="Writing" element = {<Gallery/>} />
-        {/* <Route path= "Drawing" element = {<ProjectGallery />} /> */}
-        <Route path= "Coding" element = {<CodingPromptsDifficulty/>} />
-      </Routes>
     </>
     );
 }

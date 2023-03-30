@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./codingPromptsChallenge.css";
 import Footer from '../../components/footer/footer'
 
@@ -26,7 +26,6 @@ function getChallengeBeginner() {
     pastEasyChallenges.unshift(currentChallenge)
 
     pastEasyChallenges.length = 3
-    // console.log(pastEasyChallenges);
 
     localStorage.setItem('pastEasyChallenges', JSON.stringify(pastEasyChallenges));
 
